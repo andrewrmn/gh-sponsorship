@@ -1,0 +1,176 @@
+// // ---------------------------------------------------------------------
+// //  Link & Button Styles
+// // ---------------------------------------------------------------------
+
+
+.btn {
+    text-align: center;
+    width: auto;
+    min-width: 134px;
+    padding: 10px 17px 11px;
+
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: -0.2px;
+
+    box-shadow: none;
+    transition: background $trans, color $trans, border-color $trans;
+
+}
+
+.btn-primary {
+    background: $brand;
+    border: 1px solid $brand;
+
+    &:hover {
+        background: darken($brand, 5%);
+        border-color: darken($brand, 5%);
+    }
+}
+
+.btn-outline-white {
+    background: transparent;
+    color: $white;
+    border: 1px solid $white;
+
+    &:hover {
+        background: $white;
+        color: $blue-500;
+        border-color: $white;
+    }
+}
+
+.btn-inline {
+    margin-right: 8px;
+}
+
+p + .btn + .btn {
+        margin-top: 20px;
+}
+
+
+// ----------------------------------------
+// Links
+// ----------------------------------------
+
+.icon-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 44px;
+    border: 1px solid $blue-500;
+    border-radius: 4px;
+    width: 140px;
+    padding: 0 12px;
+    transition: background $trans, border-color $trans, color $trans;
+
+    svg {
+        width: 16px;
+        fill: $blue-500;
+        margin-right: 4px;
+        max-width: 16px;
+        transition: all $trans;
+    }
+
+    > span {
+        display: block;
+        font-size: 14px;
+        font-weight: 700;
+        flex-grow: 1;
+    }
+
+    &:hover {
+        cursor: pointer;
+        background: $white;
+        color: $gray-dark;
+
+        svg {
+            fill: $gray-dark;
+        }
+    }
+}
+
+.icon-btn--white {
+    color: $white;
+    border-color: $white;
+
+    svg {
+        fill: white;
+    }
+
+    &:hover {
+        background: $white;
+        color: $gray-dark;
+
+        svg {
+            fill: $gray-dark;
+        }
+    }
+}
+
+// .btn {
+//     @include btn;
+// }
+//
+// * + .btn {
+//     margin-top: 30px;
+// }
+//
+// .btn--alt {
+//     background: transparent;
+//     color: $brand;
+//
+//     &:hover {
+//         background: $brand;
+//         color: $white;
+//     }
+// }
+//
+// .btn--outline {
+//     background: transparent;
+//     color: $brand;
+//     border-color: $brand;
+//
+//     &:active,
+//     &:focus,
+//     &:hover {
+//         border-color: $brand;
+//         cursor: pointer;
+//         background: transparent;
+//         color: $brand;
+//     }
+// }
+//
+// .btn--white {
+//     background: transparent;
+//     color: $white;
+//     border-color: $white;
+//
+//     &:hover {
+//         cursor: pointer;
+//         background: $white;
+//         color: $blue-500;
+//     }
+// }
+//
+// // ----------------------------------------
+// // Links
+// // ----------------------------------------
+//
+// .link,
+// .a,
+// p a,
+// .p a {
+//     font-weight: bold;
+//     text-decoration: underline;
+// }
+//
+//
+// // ----------------------------------------
+// //
+// // ----------------------------------------
+//
+// .noTouch .tel,
+// .noTouch .tel:hover {
+//     cursor: text;
+// }

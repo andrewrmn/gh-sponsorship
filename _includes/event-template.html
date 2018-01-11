@@ -1,0 +1,515 @@
+
+
+<article id="event-{{ event.name | slugify }}" class="github-event">
+    <header class="hero hero--border">
+        <div class="hero__content" data-animate-in="fade">
+            <p class="text-bold text-white">{{ event.date }} | {{ event.location }}</p>
+            <h2 class="hxl text-white">{{ event.name }}</h2>
+            <p class="p-lg-alt text-white">{{ event.shortDescription }}</p>
+        </div>
+        <figure class="bg-image">
+            <img src="/assets/images/{{ event.featuredImg }}" alt="{{ event.name }}" />
+        </figure>
+
+        {% if event.gallery != null %}
+        <div class="hero__photos js-open-gallery" data-animate-in="fade">
+            <div>
+                <div class="icon-btn icon-btn--white">
+                    <svg viewBox="0 0 16 12">
+                        <rect x="2" y="2" fill="none" width="16" height="12"/>
+                        <path fill="none" d="M10.5,3C8.6,3,7,4.6,7,6.5S8.6,10,10.5,10S14,8.4,14,6.5S12.4,3,10.5,3z M10.5,9C9.1,9,8,7.9,8,6.5
+                    	S9.1,4,10.5,4S13,5.1,13,6.5C13,7.9,11.9,9,10.5,9z"/>
+                        <path d="M10.5,4C9.1,4,8,5.1,8,6.5S9.1,9,10.5,9S13,7.9,13,6.5C13,5.1,11.9,4,10.5,4z"/>
+                        <path  d="M15,1H7c0-0.5-0.5-1-1-1H2C1.5,0,1,0.5,1,1C0.5,1,0,1.5,0,2v9c0,0.5,0.5,1,1,1h14c0.5,0,1-0.5,1-1V2
+                    	C16,1.5,15.5,1,15,1z M6,3H2V2h4V3z M10.5,10C8.6,10,7,8.4,7,6.5S8.6,3,10.5,3S14,4.6,14,6.5S12.4,10,10.5,10z"/>
+                    </svg>
+                    <span>View Photos</span>
+                </div>
+            </div>
+        </div>
+        {% endif %}
+    </header>
+
+    <span class="gradient-bar"></span>
+
+    <nav class="UnderlineNav bg-white">
+        <div class="container-wide UnderlineNav__inner">
+            <div class="UnderlineNav__title">
+                <p class="p-sm text-flush text-bold">{{ event.name }}</p>
+            </div>
+            <div class="UnderlineNav-body">
+                <a href="#overview" role="tab" title="Item 1" class="UnderlineNav-item selected" data-scroll-to="overview" data-scroll-offset="54" data-click-group="nav">Overview</a>
+                <a href="#Demographics" role="tab" title="Item 3" class="UnderlineNav-item" data-scroll-to="Demographics" data-scroll-offset="54" data-click-group="nav">Demographics</a>
+                {% if event.levels != null %}
+                <a href="#levels-activations" role="tab" title="Item 2" class="UnderlineNav-item" data-scroll-to="levels-activations" data-scroll-offset="100" data-click-group="nav">Opportunities</a>
+                {% endif %}
+            </div>
+        </div>
+    </nav>
+
+    <div class="js-page-section" id="overview">
+        <div class="media-object">
+            <div class="media-object__content">
+                <div>
+                    <h3 class="h1">{{ event.overviewHeadline }}</h3>
+                    {{ event.overviewContent }}
+                </div>
+            </div>
+            <div class="media-object__figure">
+                <div class="blocks blocks--half">
+                    <figure class="block blocks__1">
+                        <img src="/assets/images/{{ event.overviewImg1 }}" alt="{{ event.overviewImgDesc1 }}" />
+                    </figure>
+                    <figure class="block blocks__2">
+                        <img src="/assets/images/{{ event.overviewImg2 }}" alt="{{ event.overviewImgDesc2 }}" />
+                    </figure>
+                    <figure class="block blocks__3">
+                        <img src="/assets/images/{{ event.overviewImg3 }}" alt="{{ event.overviewImgDesc3 }}" />
+                    </figure>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section id="Demographics" class="bg-gray tabs js-page-section">
+        <div class="universe-wrap pt-9 pb-6">
+            <div class="container container--thin pr-3 pl-3 text-center">
+                <h3 class="h1" data-animate-in="fade">{{ event.demographicsHeadline }}</h3>
+                <p data-animate-in="fade">{{ event.demographicsContent }}</p>
+
+                <div class="mt-4 d-flex flex-justify-center">
+                    <nav class="subnav" aria-label="Respository">
+                      <a href="#job-type" class="tabs__tab subnav-item selected" aria-current="page">Job Type</a>
+                      <a href="#company-type" class="tabs__tab subnav-item">Company Type</a>
+                      <a href="#location" class="tabs__tab subnav-item">Location</a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+
+        <div class="pb-8 pl-3 pr-3">
+
+            <div class="tabs__content" id="job-type">
+                <div class="demographic-tile">
+                    <div class="demographic-tile__inner">
+                        {% for jobType in event.jobTypes %}
+                        <div class="bar-graph" data-detect-viewport="" data-graph="{{ jobType.percentage }}">
+                            <div class="graph">
+                                <div></div>
+                                <p><span class="js-percent">0</span>%</p>
+                                <div class="graph-fill"></div>
+                            </div>
+                            <p>{{ jobType.title }}</p>
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="tabs__content" id="company-type">
+                <div class="demographic-tile">
+                    <div class="round-graph__wrap">
+                        {% for companyType in event.companyTypes %}
+                        <div class="round-graph" data-detect-viewport="" data-graph="{{ companyType.percentage }}">
+                            <figure>
+                                <p><span class="js-percent">0</span>%</p>
+                                <svg version="1.1" viewBox="0 0 106 106">
+                                     <circle opacity="0.1" fill="none" stroke="#1B62AA" stroke-miterlimit="10" cx="53" cy="53" r="49"/>
+                                     <circle class="outer" fill="none" stroke="#086CDE" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" cx="53" cy="53" r="49"/>
+                                </svg>
+                            </figure>
+                            <p>{{ companyType.title }}</p>
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+
+            <div class="tabs__content" id="location">
+                <div class="demographic-tile">
+                    <div class="bar-graph-horizontal-wrap">
+                        {% for location in event.locations %}
+                        <div class="bar-graph bar-graph--horizontal" data-detect-viewport="" data-graph="{{ location.percentage }}">
+                            <div class="graph">
+                                <div class="graph-fill"></div>
+                                <p><span class="js-percent">0</span>%</p>
+                            </div>
+                            <p>{{ location.title }}</p>
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Gallery  -->
+        {% if event.offsetGallery != null %}
+        <div class="pb-8">
+            <div class="offset-gallery" data-animate-in="fade">
+              {% for img in event.offsetGallery %}
+                <figure>
+                    <img src="{{ site.url }}/assets/images/{{ img.image }}" alt="{{ img.alt }}" />
+                </figure>
+                {% endfor %}
+            </div>
+        </div>
+        {% endif %}
+    </section>
+
+
+
+    {% if event.levels != null %}
+    <section id="levels-activations" class="mt-7 mb-9 pr-3 pl-3 tabs js-page-section">
+        <div class="container-md text-center">
+            <h3 class="h1" data-animate-in="fade">{{ event.sponsorshipHeadline }}</h3>
+            <p data-animate-in="fade">{{ event.sponsorshipContent }}</p>
+
+            {% if event.hasTable == true %}
+            <div class="mt-4 d-flex flex-justify-center">
+                <nav class="subnav" aria-label="Respository">
+                  <a href="#Sponsorship-Levels" class="tabs__tab subnav-item selected" aria-current="page">Sponsorship Levels</a>
+                  <a href="#Comparison-Table" class="tabs__tab subnav-item">Comparison Table</a>
+                </nav>
+            </div>
+            {% endif %}
+        </div>
+
+        <div class="mt-3 mb-3">
+            {% if event.hasTable == true %}
+            <div class="tabs__content" id="Sponsorship-Levels">
+            {% endif %}
+                <div class="levels mt-7 mb-8">
+                    <nav class="levels__nav side-nav">
+                        <h4 class="text-bold">Levels</h4>
+                        <ul>
+                            {% for level in event.levels %}
+                            <li>
+                                <a {% if forloop.index == 1%}class="selected"{% endif %} href="#{{ level.title | slugify }}" data-scroll-to="{{ level.title | slugify }}" data-scroll-offset="66" data-click-group="levels">{{ level.title }}</a>
+                            </li>
+                            {% endfor %}
+                        </ul>
+                    </nav>
+
+                    <div class="levels__levels">
+
+                        {% for level in event.levels %}
+                        <article class="level js-interior-section" id="{{ level.title | slugify }}">
+                            <header class="level__header">
+                                <div>
+                                    <h4 class="h2 text-bold text-flush">{{ level.title }}</h4>
+                                    <p>{{ level.shortDescription }}</p>
+                                </div>
+                                <div>
+                                    <p class="p-sm"><span class="p-sm">Starting at</span> <span class="h4">{{ level.startingAt }}</span></p>
+                                </div>
+                            </header>
+
+                            <div class="mt-4">
+                                {% if level.summary %}
+                                <h5 class="p text-bold mb-2">Summary</h5>
+                                <p class="p-sm">{{ level.summary }}</p>
+                                {% endif %}
+
+                                <ul class="checklist mt-4">
+                                    {% if level.badge %}
+                                    <li>
+                                        {{ level.badgeCount }} conference passes and {{ level.badgeCount }} additional badges at {{ level.badgesDiscount }} discount
+                                    </li>
+                                    {% endif %}
+                                    {% if level.logoOnSignage %}
+                                    <li>
+                                        Logo on signage and interstitial slides
+                                    </li>
+                                    {% endif %}
+                                    {% if level.logoOnSite %}
+                                    <li>
+                                        Logo and link on event website
+                                    </li>
+                                    {% endif %}
+                                    {% if level.logoInCommunications %}
+                                    <li>
+                                        Logo in communications to attendees
+                                    </li>
+                                    {% endif %}
+                                    {% if level.demoType %}
+                                    <li>
+                                        {{ level.demoType }} demo area
+                                    </li>
+                                    {% endif %}
+                                    {% if level.optInEmails %}
+                                    <li>
+                                        Attendee emails of those who opt-in to be contacted
+                                    </li>
+                                    {% endif %}
+                                    {% if level.additionalCheckmarks != null %}
+                                        {% for item in level.additionalCheckmarks %}
+                                            <li>
+                                                {{ item.item }}
+                                            </li>
+                                        {% endfor %}
+                                    {% endif %}
+                                </ul>
+
+                                {% if level.opportunities != null %}
+                                {% if level.opportunitiesAlwaysShow != true %}<div class="opportunities">{% endif %}
+                                    <div class="pt-4">
+                                        {% for opportunity in level.opportunities %}
+                                        <div class="opportunity {% if opportunity.remainingQuantity == 0 or opportunity.remainingQuantity == nil %}opportunity--sold-out{% endif %}">
+                                            <h5 class="opportunity__title p text-bold"><span>{{ opportunity.title }}</span></h5>
+                                            {% if opportunity.description %}
+                                            <p>{{ opportunity.description }}</p>
+                                            {% endif %}
+
+                                            {% if opportunity.checkmarks != null %}
+                                            <ul class="checklist mt-3">
+                                                {% for item in opportunity.checkmarks %}
+                                                    <li>
+                                                        {{ item.item }}
+                                                    </li>
+                                                {% endfor %}
+                                            </ul>
+                                            {% endif %}
+
+                                            <div class="opportunity__pricing mt-3">
+                                                <div>
+                                                    <!-- <p><span class="p-sm">Price</span> <span class="h3">{{ opportunity.price }}</span></p> -->
+
+                                                    <p><span class="p-sm">Quantity</span> <span class="h3">{% if opportunity.remainingQuantity == nil %}0{% else %}{{ opportunity.remainingQuantity }}{% endif %}</span></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        {% endfor %}
+                                    </div>
+                                {% if level.opportunitiesAlwaysShow != true %}
+                                </div>
+
+                                <div class="pt-4">
+                                    <a href="#show-details" class="show-details-toggle shape-inline">
+                                        <span class="p-sm text-bold text-blue">Opportunities</span>
+                                        <figure>
+                                            <svg viewBox="0 0 9 5" width="9px" height="5px">
+                                                <polygon fill="#0366D6" points="4,5.2 0,1.2 1.2,0 4,3 6.8,0 8,1.2 "/>
+                                            </svg>
+                                        </figure>
+                                    </a>
+                                </div>
+                                {% endif %}
+                                {% endif %}
+                            </div>
+                        </article>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+
+            {% if event.hasTable == true %}
+            <div class="tabs__content" id="Comparison-Table">
+                <div class="table-wrap container-wide mt-7">
+                    <table>
+                        <thead>
+                            <tr>
+                                <td>
+                                    <p class="h3">Benefits</p>
+                                </td>
+                                {% for level in event.levels %}
+                                    {% if level.showInTable %}
+                                    <td>
+                                        <p class="text-bold">{{ level.title }}</p>
+                                        <p class="p-sm">{{ level.tableDescription }}</p>
+                                    </td>
+                                    {% endif %}
+                                {% endfor %}
+                            </tr>
+                        </thead>
+                        <tr>
+                            <td>
+                                Complimentary conference badge
+                            </td>
+                            {% for level in event.levels %}
+                                {% if level.showInTable %}
+                                <td>
+                                    {{ level.badgeCount }}
+                                </td>
+                                {% endif %}
+                            {% endfor %}
+                        </tr>
+
+                        <tr>
+                            <td>
+                                Additional badges @ discount
+                            </td>
+                            {% for level in event.levels %}
+                                {% if level.showInTable %}
+                                <td>
+                                    {{ level.badgesDiscount }}
+                                </td>
+                                {% endif %}
+                            {% endfor %}
+                        </tr>
+
+                        <tr>
+                            <td>
+                                Logo on website with link
+                            </td>
+                            {% for level in event.levels %}
+                                {% if level.showInTable %}
+                                <td>
+                                    {% if level.logoOnSite %}
+                                    <img src="/assets/images/svgs/check.svg" alt="Green checkmark icon" />
+                                    {% endif %}
+                                </td>
+                                {% endif %}
+                            {% endfor %}
+                        </tr>
+
+                        <tr>
+                            <td>
+                                Mention in communications to attendees
+                            </td>
+                            {% for level in event.levels %}
+                                {% if level.showInTable %}
+                                <td>
+                                    {% if level.logoInCommunications %}
+                                    <img src="/assets/images/svgs/check.svg" alt="Green checkmark icon" />
+                                    {% endif %}
+                                </td>
+                                {% endif %}
+                            {% endfor %}
+                        </tr>
+
+                        <tr>
+                            <td>
+                                Logo on conference signage
+                            </td>
+                            {% for level in event.levels %}
+                                {% if level.showInTable %}
+                                <td>
+                                    {% if level.logoOnSignage %}
+                                    <img src="/assets/images/svgs/check.svg" alt="Green checkmark icon" />
+                                    {% endif %}
+                                </td>
+                                {% endif %}
+                            {% endfor %}
+                        </tr>
+
+                        <tr>
+                            <td>
+                                Logo on interstitial slides
+                            </td>
+                            {% for level in event.levels %}
+                                {% if level.showInTable %}
+                                <td>
+                                    {% if level.logoOnSlides %}
+                                    <img src="/assets/images/svgs/check.svg" alt="Green checkmark icon" />
+                                    {% endif %}
+                                </td>
+                                {% endif %}
+                            {% endfor %}
+                        </tr>
+
+                        <tr>
+                            <td>
+                                Onsite presence for team
+                            </td>
+                            {% for level in event.levels %}
+                                {% if level.showInTable %}
+                                <td>
+                                    {% if level.onSitePresence %}
+                                    <img src="/assets/images/svgs/check.svg" alt="Green checkmark icon" />
+                                    {% endif %}
+                                </td>
+                                {% endif %}
+                            {% endfor %}
+                        </tr>
+
+                        <tr>
+                            <td>
+                                Product demo
+                            </td>
+                            {% for level in event.levels %}
+                                {% if level.showInTable %}
+                                <td>
+                                    {% if level.demo %}
+                                    {{ level.demoType }}
+                                    {% endif %}
+                                </td>
+                                {% endif %}
+                            {% endfor %}
+                        </tr>
+
+                        <tr>
+                            <td>
+                                Attendee opt-in emails
+                            </td>
+                            {% for level in event.levels %}
+                                {% if level.showInTable %}
+                                <td>
+                                    {% if level.optInEmails %}
+                                    <img src="/assets/images/svgs/check.svg" alt="Green checkmark icon" />
+                                    {% endif %}
+                                </td>
+                                {% endif %}
+                            {% endfor %}
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            {% endif %}
+        </div>
+    </section>
+    {% endif %}
+
+    <!-- Gallery 2  -->
+    <section class="photoswipe is-hidden" itemscope itemtype="http://schema.org/ImageGallery">
+        {% for image in event.gallery %}
+        <figure class="block" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+          <a href="{{ site.url }}/assets/images/{{ image.image }}" itemprop="contentUrl" data-size="">
+              <img src="{{ site.url }}/assets/images/{{ image.image }}" itemprop="thumbnail" alt="{{ image.alt }}" />
+          </a>
+          {% if image.caption %}
+          <figcaption>
+              <p>{{ image.caption }}</p>
+          </figcaption>
+          {% endif %}
+        </figure>
+        {% endfor %}
+    </section>
+</article>
+
+
+<aside class="bg-gray pt-9 pb-9">
+    <div class="container pr-3 pl-3">
+        {% if event.ctaHeadline and event.ctaLinkText and event.ctaLinkUrl %}
+        <div class="text-center mb-6" data-animate-in="fade">
+            <h4 class="h1">{{ event.ctaHeadline }}</h4>
+            <p>{{ event.ctaContent }}</p>
+            {% if event.ctaLinkText and event.ctaLinkUrl %}
+                <a class="btn btn-primary btn-inline" href="{{ event.ctaLinkUrl }}">{{ event.ctaLinkText }}</a>
+            {% endif %}
+            {% if event.ctaLinkUrl2 and event.ctaLinkText2 %}
+                <a class="btn btn-outline" href="{{ event.ctaLinkUrl2 }}">{{ event.ctaLinkText2 }}</a>
+            {% endif %}
+        </div>
+        {% endif %}
+
+        {% assign pageId = page.id | remove: 'events' | remove: '/' %}
+
+        <ul class="logo-list" data-animate-in="fade">
+            {% for sponsor in site.data.sponsors %}
+                {% for city in sponsor.events %}
+                    {% if city.id == pageId %}
+                    <li>
+                        <a href="{{ sponsor.url }}" target="_blank">
+                            <img src="/assets/images/sponsors/{{ sponsor.logo }}" alt="{{ sponsor.name }}" />
+                        </a>
+                    </li>
+                    {% endif %}
+                {% endfor %}
+            {% endfor %}
+        </ul>
+    </div>
+</aside>
+
+{% include photoswipe.html %}

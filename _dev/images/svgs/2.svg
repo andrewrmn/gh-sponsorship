@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>2</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="0%" y1="0%" x2="101.999998%" y2="100.999999%" id="linearGradient-1">
+            <stop stop-color="#3023AE" offset="0%"></stop>
+            <stop stop-color="#C86DD7" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="1.0-Home-Alt***" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-448.000000, -1450.000000)">
+        <g id="Text" transform="translate(448.000000, 1449.000000)">
+            <g id="2">
+                <circle id="Oval-4" stroke="url(#linearGradient-1)" stroke-width="2" cx="12" cy="13" r="11"></circle>
+                <path d="M8.0078125,10.6015625 C8.0078125,8.421875 9.6796875,6.9375 12.1171875,6.9375 C14.46875,6.9375 16.109375,8.2890625 16.109375,10.2265625 C16.109375,11.453125 15.4453125,12.5078125 13.4921875,14.34375 L11.3359375,16.3984375 L11.3359375,16.5390625 L16.2734375,16.5390625 L16.2734375,18.5 L8.140625,18.5 L8.140625,16.8515625 L11.8203125,13.25 C13.40625,11.703125 13.8046875,11.1171875 13.8046875,10.3828125 C13.8046875,9.4765625 13.0703125,8.8359375 12.0390625,8.8359375 C10.9453125,8.8359375 10.1953125,9.5546875 10.1953125,10.59375 L10.1953125,10.640625 L8.0078125,10.640625 L8.0078125,10.6015625 Z" fill="#6F42C1"></path>
+            </g>
+        </g>
+    </g>
+</svg>

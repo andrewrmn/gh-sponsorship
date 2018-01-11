@@ -1,0 +1,109 @@
+---
+layout: default
+title: Contact Us
+id: contact
+permalink: /contact/
+---
+
+
+
+    <header class="hero hero--dark hero--short">
+        {% for page in site.data.contact %}
+        <div class="hero__content" data-animate-in="fade">
+            <h2 class="hxl text-white">{{ page.headline }}</h2>
+            <p class="p-lg-alt text-white">{{ page.subHeadline }}</p>
+            {% if page.ctaLink and page.ctaText %}
+                <a class="btn btn-primary btn-inline" href="{{ page.ctaLink }}">{{ page.ctaText }}</a>
+            {% endif %}
+
+            {% if page.cta2Link and page.cta2Text %}
+                <a class="btn btn-outline-white" href="{{ page.cta2Link }}">{{ page.cta2Text }}</a>
+            {% endif %}
+        </div>
+        <figure class="bg-image">
+            <img src="/assets/images/{{ page.featuredImg }}" alt="{% if page.featuredImgDesc %}{{ page.featuredImgDesc }}{% else %}{{ title }}{% endif %}" />
+        </figure>
+        {% endfor %}
+    </header>
+
+
+
+    <div class="container pt-8 pb-8 pl-3 pr-3">
+        <form data-animate-in="up" validate="validate">
+            <h3 class="h2">Contact Events Team</h3>
+
+            <div>
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input class="form-control input-block" placeholder="First and Last Name" type="text" id="name" required>
+                    <dd class="error" id="form-error-text">This example input has an error.</dd>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email address</label>
+                    <input class="form-control input-block" placeholder="yourname@example.com" type="email" id="email">
+                </div>
+
+                <div class="form-group">
+                    <label for="company">Company</label>
+                    <input class="form-control input-block" placeholder="e.g. Gotham Enterprises" type="text" id="company">
+                </div>
+
+                <div class="form-group">
+                    <label>Event(s) I’m interested in:</label>
+                    <div class="pb-1">
+                        <label class="label-checkbox">
+                            <input type="checkbox" id="GitMerge" name="GitMerge" checked> GitMerge
+                        </label>
+                    </div>
+                    <div class="pb-1">
+                        <label class="label-checkbox">
+                            <input type="checkbox" id="ElectronConf" name="ElectronConf"> ElectronConf
+                        </label>
+                    </div>
+                    <div class="pb-1">
+                        <label class="label-checkbox">
+                            <input type="checkbox" id="Universe" name="Universe"> Universe
+                        </label>
+                    </div>
+                    <div class="pb-1">
+                        <div>
+                            <label class="label-checkbox">
+                                <input type="checkbox" id="Constellation" name="Constellation"> Constellation*
+                            </label>
+
+                        </div>
+                        <div class="pt-1 pb-1">
+                            <p class="note text-italic mb-2">*Constellation is a localized multi-event series taking place in several cities.</p>
+                            <label class="sr-only" for="constellation_cities">Constellation cities interested in</label>
+                            <input class="form-control input-sm input-block" placeholder="Enter city or cities you’re interested in" type="text" id="constellation_cities">
+                        </div>
+                    </div>
+                </div>
+
+                <dl class="form-group">
+                    <dt><label for="tell-us-more">Tell us more about how we can help get you involved</label></dt>
+                    <dd>
+                        <textarea class="form-control" id="tell-us-more"></textarea>
+                    </dd>
+                </dl>
+
+                <div class="form-group">
+                    <label>Have you sponsored a GitHub event in the past?</label>
+                    <div>
+                        <label class="label-checkbox mr-3">
+                            <input type="radio" id="yes" name="previous-sponsor" checked> Yes
+                        </label>
+
+                        <label class="label-checkbox">
+                            <input type="radio" id="no" name="previous-sponsor"> No
+                        </label>
+                    </div>
+                </div>
+
+                <div class="mt-6">
+                    <button class="btn btn-primary" type="submit">Submit</button>
+                </div>
+            </div>
+        </form>
+    </div>

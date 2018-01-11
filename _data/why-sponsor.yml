@@ -1,0 +1,50 @@
+- headline: Why sponsor a GitHub event
+  subHeadline: With a full focus on building the best developer experience possible, our events give you a new way to showcase your brand. We help you find the opportunity that’s right for you, and you make connections as it comes to life.
+  ctaText: Become a sponsor
+  ctaLink: /contact/
+  cta2Text: Learn more about our events
+  cta2Link: /events/
+  # Include path starting from the image folder i.e. marketing/GitHub-Image-Collage.jpg
+  featuredImg: marketing/why-hero-bkg.jpg
+  featuredImgDesc: GitHub Universe design
+
+
+  # Section one
+  sectionOneHeadline: Why events are different
+  sectionOneContent: Universe highlights how software opens up possibilities that are otherwise unavailable. It brings people together to work on challenges that are bigger than any one person can tackle. Working together means creating ideas and finding solutions that are unique to that collection of people. Through software, we can achieve a sum that is greater than our parts.
+  # Include path starting from the image folder i.e. marketing/GitHub-Image-Collage.jpg
+  sectionOneImg: marketing/GitHub-Universe-Octopus.png
+  sectionOneImgDesc: GitHub Universe Octopus Display
+
+  # Section Two
+  sectionTwoHeadline: Audience Demographics
+  sectionTwoContent: Universe highlights how software opens up possibilities that are otherwise unavailable. It brings people together to work on challenges that are bigger than any one person can tackle. Working together means creating ideas and finding solutions that are unique to that collection of people. Through software, we can achieve a sum that is greater than our parts.
+  # Include path starting from the image folder i.e. marketing/GitHub-Image-Collage.jpg
+  sectionTwoImg1: marketing/why-block-1.jpg
+  sectionTwoImgDesc1:
+  sectionTwoImg2: marketing/why-block-2.jpg
+  sectionTwoImgDesc2:
+  sectionTwoImg3: marketing/why-block-3.jpg
+  sectionTwoImgDesc3:
+
+  # Section Three
+  sectionThreeHeadline: Engagement Stats
+  sectionThreeContent: This is a text area for some information leading into the engagement results from past sponsorships that show data and success.
+
+  # Blocks
+  block1Headline: Audience > self
+  block1Content: Our events focus on how we can build the most authentic relationships with attendees, not just the best way to pitch them.
+
+  block2Headline: Diversity > consensus
+  block2Content: Our events aim to amplify ideas that challenge us from a wide range of people and industries, not just the most popular ones.
+
+  block3Headline: People > technology
+  block3Content: Our events tell the stories of the individuals behind the tools, not just the tools themselves.
+
+
+  ctaHeadline: A call to action section to conclude this page
+  ctaContent: Use it to provide information to direct users to another page.
+  ctaLinkText: View GitHub Events
+  ctaLinkUrl: /events/
+  ctaLinkText2: Contact Us
+  ctaLinkUrl2: /contact/

@@ -1,0 +1,165 @@
+
+// ---------------------------------------------------------------------
+//  Hero Styles Settings
+// ---------------------------------------------------------------------
+
+.hero {
+	overflow: hidden;
+	padding: 80px 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	position: relative;
+	z-index: 1;
+
+	@include breakpoint(md) {
+		height: 378px;
+	}
+
+	&:after {
+		content: '';
+		display: block;
+		z-index: -1;
+		@include cover-parent;
+		mix-blend-mode: multiply;
+		background: rgba(#24292E, 0.8);
+	}
+
+	figure {
+		padding: 0;
+		z-index: -2;
+		background: $black;
+	}
+
+	&.hero--blob {
+		padding: 74px 0;
+	}
+
+	&.hero--blob-sm {
+		padding: 24px 0;
+	}
+
+	&.hero--dark {
+
+		&:after {
+			background: #2C3237;
+		}
+
+		figure {
+			padding: 0;
+			z-index: 1;
+			background: transparent;
+		}
+	}
+
+	&.hero--short {
+
+		@include breakpoint(md) {
+			height: 300px;
+		}
+	}
+
+	p a {
+		color: $gray-400;
+		text-decoration: underline;
+	}
+}
+
+.hero--tall {
+	height: calc(100vh - 76px);
+}
+
+.hero__content {
+	position: relative;
+	z-index: 2;
+	max-width: 760px;
+	margin: 0 auto;
+	padding: 0 16px;
+}
+
+.hero__photos {
+	position: absolute;
+	bottom: 32px;
+	left: 0;
+	padding: 0 24px;
+	max-width: 800px;
+
+	width: 50%;
+
+	> * {
+		max-width: 640px;
+		margin: 0 auto;
+	}
+}
+
+
+// ----------------------------------------
+// intro
+// ----------------------------------------
+
+.intro {
+	position: relative;
+	z-index: 1;
+	overflow: hidden;
+
+	@include breakpoint(lg) {
+		display: flex;
+		align-items: center;
+		padding: 0 0 80px;
+
+		> * {
+			width: 50%;
+		}
+	}
+}
+
+.intro__content {
+	position: relative;
+	padding: 80px 16px;
+	z-index: 2;
+
+	@include breakpoint(lg) {
+		padding: 80px 24px;
+		min-width: 660px;
+
+		> * {
+			max-width: 640px;
+			margin: 0 auto;
+		}
+	}
+}
+
+.master-blob {
+	position: relative;
+	width: 775px;
+	margin: 0;
+	padding: 0;
+	transform: translate3d(80px, -60px, 0);
+	display: none;
+
+	@include breakpoint(lg) {
+		display: block;
+	}
+
+	.bg-image {
+		clip-path: url(#clipping);
+	}
+
+	svg {
+		position: absolute;
+		width: 775px;
+	}
+
+	.svg-bg {
+		position: relative;
+		transform: translate3d(20px, 20px, 0);
+	}
+
+	.svg-bg-2 {
+		top: 0;
+		left: 0;
+		z-index: -1;
+		transform: translate3d(40px, 40px, 0);
+	}
+}

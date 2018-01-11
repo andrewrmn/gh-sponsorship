@@ -1,0 +1,62 @@
+{% if page.id == "events" or page.id == "home" %}
+<aside class="{% if page.type == 'event' %}bg-gray{% endif %} pt-9 pb-9">
+    <div class="container">
+        <div class="text-center mb-6" data-animate-in="fade">
+            <h4 class="p">GitHub Sponsors</h4>
+            <p class="h1">Proudly working with world-class companies</p>
+        </div>
+        <ul class="logo-list" data-animate-in="fade">
+            {% for sponsor in site.data.sponsors %}
+            <li>
+              <a href="{{ sponsor.url }}" target="_blank">
+                <img src="/assets/images/sponsors/{{ sponsor.logo }}" alt="{{ sponsor.name }}" />
+              </a>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+</aside>
+{% endif %}
+
+{% if page.id == "home" %}
+{% for page in site.data.home %}
+<aside class="blankslate blankslate--gradient pt-9 pb-9">
+    <div data-animate-in="fade">
+        <h4 class="h1 text-white">{{ page.ctaHeadline }}</h4>
+        {% if page.ctaContent %}<p class="text-white">{{ page.ctaContent }}</p>{% endif %}
+        {% if page.ctaLinkText and page.ctaLinkUrl %}
+            <a class="btn btn-outline-white" href="{{ page.ctaLinkUrl }}">{{ page.ctaLinkText }}</a>
+        {% endif %}
+        {% if page.ctaLinkUrl2 and page.ctaLinkText2 %}
+            <a class="btn btn-outline-white" href="{{ page.ctaLinkUrl2 }}">{{ page.ctaLinkText2 }}</a>
+        {% endif %}
+    </div>
+</aside>
+{% endfor %}
+{% endif %}
+
+<footer class="site-footer">
+    <div class="container-wide">
+        <div class="site-footer__legal">
+            <a href="">
+                <img src="/assets/images/GitHub-logomark-white.svg" alt="GitHub Logo" />
+            </a>
+            <p>©<script>document.write(new Date().getFullYear())</script> GitHub, Inc. All Rights Reserved.</p>
+        </div>
+
+        <ul>
+            <li>
+                <a href="https://github.com/about/" target="_blank">About GitHub</a>
+            </li>
+            <li>
+                <a href="/code-of-conduct/">Code of Conduct</a>
+            </li>
+            <li>
+                <a href="/terms-conditions/">Terms & Conditions</a>
+            </li>
+            <li>
+                <a href="/contact/">Contact</a>
+            </li>
+        </ul>
+    </div>
+</footer>

@@ -1,0 +1,56 @@
+---
+layout: default
+title: Frequently Asked Questions
+id: faq
+permalink: /faq/
+---
+
+{% for page in site.data.faqs %}
+    <header class="hero hero--dark hero--short">
+        <div class="hero__content" data-animate-in="fade">
+            <h2 class="hxl text-white">{{ page.headline }}</h2>
+            <p class="p-lg-alt text-white">{{ page.subHeadline }}</p>
+            {% if page.ctaLink and page.ctaText %}
+                <a class="btn btn-primary btn-inline" href="{{ page.ctaLink }}">{{ page.ctaText }}</a>
+            {% endif %}
+            {% if page.cta2Link and page.cta2Text %}
+                <a class="btn btn-outline-white" href="{{ page.cta2Link }}">{{ page.cta2Text }}</a>
+            {% endif %}
+        </div>
+        <figure class="bg-image">
+            <img src="/assets/images/{{ page.featuredImg }}" alt="{% if page.featuredImgDesc %}{{ page.featuredImgDesc }}{% else %}featured image{% endif %}" />
+        </figure>
+    </header>
+
+    <div class="faqs split-layout">
+        <nav class="split-layout__sidebar mt-8 mb-8 faqs__nav side-nav">
+            <h4 class="text-bold">Categories</h4>
+            <ul>
+            {% for group in page.faqs %}
+                {% assign groupId = group.group | slugify %}
+                <li>
+                    <a {% if forloop.index == 1 %}class="selected"{% endif %} href="#{{ groupId }}" data-scroll-to="{{ groupId }}" data-scroll-offset="-0" data-click-group="faqs">{{ group.group }}</a>
+                </li>
+            {% endfor %}
+            </ul>
+        </nav>
+
+        <div class="faqs__content split-layout__content pb-9 pr-3 pl-3 pl-md-6">
+            {% for group in page.faqs %}
+            {% assign groupId = group.group | slugify %}
+            <div class="pt-7 js-interior-section" id="{{ groupId }}" data-animate-in="up">
+                <h3 class="h1">{{ group.group }}</h3>
+                <dl class="dl">
+                    {% for question in group.questions %}
+                    <dt>{{ question.question }}</dt>
+                    <dd>{{ question.answer }}</dd>
+                    {% endfor %}
+                </dl>
+            </div>
+            {% endfor %}
+
+            <span class="container-wide mb-9"></span>
+        </div>
+    </div>
+
+{% endfor %}

@@ -1,0 +1,335 @@
+- name: GitHub Satellite
+  date: Oct 16 - 17
+  location: San Francisco, CA
+  capacity: 2000 Attendees
+  shortDescription: GitHub Satellite is a two-day conference dedicated to exploring what’s next in the GitHub universe.
+
+  # Include path starting from the image folder i.e. marketing/GitHub-Image-Collage.jpg
+  featuredImg: events/satellite/satellite-hero.jpg
+  previewImg: events/universe/Universe-Thumbnail.jpg
+
+
+  # Overview
+  overviewHeadline: What is GitHub Satellite?
+
+  # <p> tags required for multiple paragraphs
+  overviewContent: |
+    <p>Universe is GitHub’s flagship four-track conference. It brings together approximately 1,800 attendees from all areas of the software community to explore the future of development and the tools that can help us get there.</p>
+
+    <p>The full program gives attendees two days of discovery with executive keynotes, dozens of speakers from prominent software companies, workshops, and an after party.</p>
+  # Include path starting from the image folder i.e. marketing/GitHub-Image-Collage.jpg
+  overviewImg1: events/universe/universe-block-1.jpg
+  overviewImgDesc1: outdoor seating at Universe
+  overviewImg2: events/universe/universe-block-2.jpg
+  overviewImgDesc2: Tile wall at Universe
+  overviewImg3: events/universe/universe-block-3.jpg
+  overviewImgDesc3: Virtual Reality fun at Universe
+
+
+  # Demographics
+  demographicsHeadline: Demographic Breakdown
+  demographicsContent: From engineers to executives, our events attract a wide range of people who share a passion for building better software.
+
+  jobTypes:
+    - title: Engineer/ Product
+      percentage: 65
+    - title: Technical Lead
+      percentage: 15
+    - title: Technical Executive
+      percentage: 15
+    - title: Business Executive
+      percentage: 5
+
+  companyTypes:
+    - title: Enterprise
+      percentage: 45
+    - title: Small/Medium Business
+      percentage: 25
+    - title: Startup/ Independent
+      percentage: 25
+    - title: Public/ Education
+      percentage: 5
+
+  locations:
+    - title: USA
+      percentage: 65
+    - title: International
+      percentage: 35
+
+
+  # Include path starting from the image folder i.e. marketing/GitHub-Image-Collage.jpg
+  offsetGallery:
+    # - image:
+    #   alt:
+
+
+  # Sponsorship
+  sponsorshipHeadline: Sponsorship Opportunities
+  sponsorshipContent: Whatever your sponsorship goals, we’ve got an opportunity that will help you get there. Choose a level and watch your brand shine at the next GitHub Satellite.
+
+  hasTable: true
+  levels:
+      - title: Lead
+        shortDescription: Achieve the highest level of brand awareness with opportunities for thought leadership on stage and online.
+        showInTable: true
+        tableDescription: The most 1:1 time with attendees
+        startingAt: $50,000
+        summary: Engage sponsorships are for companies that seek a high level of personal interaction with developers and technical leadership onsite. Featuring private demo stations and spacious, welcoming layouts, these opportunities are the perfect way to connect with attendees in a meaningful way. Sponsors at the Engage level have a unique opportunity to collect attendee emails prior to the event, based on opt-in responses to the final pre-conference email.
+
+        # put true or false for the following exepct badgeType, badgesDiscount, demoType, which all can be whatever you want
+        badge: true
+        badgeCount: 5
+        badgesDiscount: 50%
+        logoOnSite: true
+        logoInCommunications: true
+        logoOnSignage: true
+        logoOnSlides: true
+        onSitePresence: true
+        demo: true
+        demoType: Private
+        optInEmails: true
+
+        additionalCheckmarks:
+          # - item: Something else here
+
+        opportunities:
+          # - title: Workshop
+          #   description:
+          #   price: $25,000
+          #   # if remainingQuantity is empty or at 0 this opportunity will be displayed as sold-out
+          #   remainingQuantity: 2
+
+      ##################################################################
+      ##################################################################
+      - title: Engage
+        shortDescription: Maximize attendee interaction with a prominent on-site presence and a private demo station.
+        showInTable: true
+        tableDescription: Maximize attendee interaction
+        startingAt: $30,000
+        summary: |
+          Engage sponsorships are for companies that seek a high level of personal interaction with developers and technical leadership onsite. Featuring private demo stations and welcoming layouts, these opportunities are the perfect way to connect with attendees in a meaningful way.
+          <br />
+          Sponsors at the Engage level have a unique opportunity to collect attendee emails prior to the event, based on opt-in responses to the final pre-conference email.
+
+        # put true or false for the following exepct badgeType, badgesDiscount, demoType, which all can be whatever you want
+        badge: true
+        badgeCount: 5
+        badgesDiscount: 50%
+        logoOnSite: true
+        logoInCommunications: true
+        logoOnSignage: true
+        logoOnSlides: true
+        onSitePresence: true
+        demo: true
+        demoType: Private
+        optInEmails: true
+
+        additionalCheckmarks:
+          - item: One complimentary 15 min live stream demo slot
+          - item: Option to add-on a-la-carte deliverables
+
+        opportunities:
+          - title: Demo Lounge
+            description: One of the best ways to engage with attendees on a deeper level, this is the only sponsorship that comes with a personal demo station. Designed to be inviting, these spaces will generally be full of attendees hanging out, getting work done or looking to have conversations with your team.
+            price: $22,000
+            # if remainingQuantity is empty or at 0 this opportunity will be displayed as sold-out
+            remainingQuantity: 2
+
+
+      ##################################################################
+      ##################################################################
+      - title: Delight
+        shortDescription: Increase brand awareness with memorable interactive experiences.
+        showInTable: true
+        tableDescription: Memorable interactive experiences
+        startingAt: $20,000
+        summary: Delight sponsorships offer a balance of brand awareness and attendee engagement. We work closely with you to bring your brand values to life through memorable art installations and experiences, in a central location in the venue. Delight sponsorships have the highest opportunity for social media traction and brand recognition.
+
+        # put true or false for the following exepct badgeType, badgesDiscount, demoType, which all can be whatever you want
+        badge: true
+        badgeCount: 5
+        badgesDiscount: 50%
+        logoOnSite: true
+        logoInCommunications: true
+        logoOnSignage: true
+        logoOnSlides: true
+        onSitePresence: true
+        demo: true
+        demoType:
+        optInEmails: false
+
+        additionalCheckmarks:
+          - item: Time each day at the shared Demo Desk
+          - item: Option to add-on a-la-carte deliverables
+
+        opportunities:
+          - title: Art Installation
+            description: Art installations are a unique way to bring your brand to life. From dynamic murals to 30-foot balloon sculptures, we’ve helped teams create all sorts of memorable experiences that inspire conversation about your brand.
+            price: $15,000
+            # if remainingQuantity is empty or at 0 this opportunity will be displayed as sold-out
+            remainingQuantity: 2
+
+
+      ##################################################################
+      ##################################################################
+      - title: Sustain
+        shortDescription: Put your brand in the hands of attendees with customized conference essentials.
+        showInTable: true
+        tableDescription: Your brand in everyone’s hands
+        startingAt: $20,000
+        summary: Sustain sponsorships provide attendees with those thoughtful extras that ensure they have a great time. From snacks to giveaways, this is your change to hydrate, energize, and inspire them. Sustain sponsorships are the best way to put your brand directly into the hands of attendees. Please note these sponsorships do not include a dedicated space for your team to congregate or demo, but you have the option to add on live streamed demo slots.
+
+        # put true or false for the following exepct badgeType, badgesDiscount, demoType, which all can be whatever you want
+        badge: true
+        badgeCount: 3
+        badgesDiscount: 40%
+        logoOnSite: true
+        logoInCommunications: true
+        logoOnSignage: true
+        logoOnSlides: true
+        onSitePresence: false
+        demo: false
+        demoType:
+        optInEmails: false
+
+        additionalCheckmarks:
+          - item: Option to add-on a-la-carte deliverables
+
+        opportunities:
+          - title: Specialty F&B
+            description: Treat attendees to a delicious and energy-boosting treat. From mustard-dipped pretzels to gourmet coffee, we create custom packaging for your item of choice and distribute to hungry attendees on both days of the conference.
+            price: $12,000
+            # if remainingQuantity is empty or at 0 this opportunity will be displayed as sold-out
+            remainingQuantity: 2
+
+
+      ##################################################################
+      ##################################################################
+      - title: Join
+        shortDescription: Boost brand awareness with our most affordable activation.
+        showInTable: true
+        tableDescription: Boost brand awareness
+        startingAt: $20,000
+        summary: This opportunity is perfect for cost-conscious companies who are eager to get their brand in front of attendees, or who would like a taste of a GitHub event experience before committing to a larger package. Please note these sponsorships do not include an on-site space for your team to congregate or demo.
+
+        # put true or false for the following exepct badgeType, badgesDiscount, demoType, which all can be whatever you want
+        badge: true
+        badgeCount: 2
+        badgesDiscount: 25%
+        logoOnSite: true
+        logoInCommunications: true
+        logoOnSignage: true
+        logoOnSlides: true
+        onSitePresence: false
+        demo: false
+        demoType:
+        optInEmails: false
+
+        additionalCheckmarks:
+          # - item: Something else here
+
+        opportunities:
+          # - title: Notebooks
+          #   description: The GitHub Universe after party celebrates people who shape the future of software, featuring live musical entertainment for a great cause. In addition to conference benefits included with Engage sponsorships, this opportunity offers concert venue branding, a well-placed lounge, and special thanks in the pre-event attendee email.
+          #   price: $35,000
+          #   # if remainingQuantity is empty or at 0 this opportunity will be displayed as sold-out
+          #   remainingQuantity:
+
+
+      ##################################################################
+      ##################################################################
+      - title: Add-On Deliverables
+        shortDescription: Power up your presence at Universe with these add-ons, available to sponsors of any level.
+        showInTable: false
+        startingAt: $1,500
+        summary:
+
+        additionalCheckmarks:
+          - item: Swag bag
+
+      ########################  End Levels   ###########################
+      ##################################################################
+
+  ctaHeadline: Let’s bring your brand into the spotlight.
+  ctaContent:
+  ctaLinkText: Become a sponsor
+  ctaLinkUrl: /contact/
+  ctaLinkText2:
+  ctaLinkUrl2:
+
+
+
+  # Include path starting from the image folder i.e. marketing/GitHub-Image-Collage.jpg
+  gallery:
+    # - image: events/universe/universe-modal-1.jpg
+    #   alt:
+    #   caption: I have a caption
+    # - image: events/universe/universe-modal-2.jpg
+    #   alt:
+    #   caption:
+    # - image: events/universe/universe-modal-3.jpg
+    #   alt:
+    #   caption:
+    # - image: events/universe/universe-modal-4.jpg
+    #   alt:
+    #   caption:
+    # - image: events/universe/universe-modal-5.jpg
+    #   alt:
+    #   caption:
+    # - image: events/universe/universe-modal-6.jpg
+    #   alt:
+    #   caption:
+    # - image: events/universe/universe-modal-7.jpg
+    #   alt:
+    #   caption:
+    # - image: events/universe/universe-modal-8.jpg
+    #   alt:
+    #   caption:
+    # - image: events/universe/universe-modal-9.jpg
+    #   alt:
+    #   caption:
+    # - image: events/universe/universe-modal-10.jpg
+    #   alt:
+    #   caption:
+    # - image: events/universe/universe-modal-11.jpg
+    #   alt:
+    #   caption:
+    # - image: events/universe/universe-modal-12.jpg
+    #   alt:
+    #   caption:
+    # - image: events/universe/universe-modal-13.jpg
+    #   alt:
+    #   caption:
+    # - image: events/universe/universe-modal-14.jpg
+    #   alt:
+    #   caption:
+    # - image: events/universe/universe-modal-15.jpg
+    #   alt:
+    #   caption:
+    # - image: events/universe/universe-modal-16.jpg
+    #   alt:
+    #   caption:
+    # - image: events/universe/universe-modal-17.jpg
+    #   alt:
+    #   caption:
+    # - image: events/universe/universe-modal-18.jpg
+    #   alt:
+    #   caption:
+    # - image: events/universe/universe-modal-19.jpg
+    #   alt:
+    #   caption:
+    # - image: events/universe/universe-modal-20.jpg
+    #   alt:
+    #   caption:
+    # - image: events/universe/universe-modal-21.jpg
+    #   alt:
+    #   caption:
+    # - image: events/universe/universe-modal-22.jpg
+    #   alt:
+    #   caption:
+    # - image: events/universe/universe-modal-23.jpg
+    #   alt:
+    #   caption:
+    # - image: events/universe/universe-modal-24.jpg
+    #   alt:
+    #   caption:

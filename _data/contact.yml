@@ -1,0 +1,10 @@
+- headline: Ready or interested in sponsoring?
+  subHeadline: Whether it’s your first time or 100th, our team is here to help.<br />
+      Also visit our <a href="/faq/">Sponsor FAQ</a> to see if your question already has an answer.
+  ctaText:
+  ctaLink:
+  cta2Text:
+  cta2Link:
+  # Include path starting from the image folder i.e. marketing/GitHub-Image-Collage.jpg
+  featuredImg: marketing/contact-hero-bkg.jpg
+  featuredImgDesc: Constellation launch site graphics

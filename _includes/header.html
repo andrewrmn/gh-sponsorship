@@ -1,0 +1,68 @@
+
+<header class="site-header">
+    <div class="site-header__inner container-wide">
+        <h1 class="logo">
+            <a href="/">
+                <img src="/assets/images/GitHub-Sponsors-logo.svg" alt="GitHub Sponsorship Prospectus Logo" />
+            </a>
+        </h1>
+
+        <div class="site-header-panel">
+            <div>
+                <ul class="main-nav">
+                    <li {% if page.id == 'home' %}class="is-active"{% endif %}>
+                        <a href="/">Home</a>
+                    </li>
+                    <li class="has-sub-nav {% if page.type == 'event' %}is-active{% endif %}">
+                        <a href="/events/">
+                            <span>Events</span>
+                            <svg version="1.1" viewBox="0 0 8 5">
+                                <polygon points="4,5 0,1.2 1.2,0 4,2.9 6.8,0 8,1.2 "/>
+                            </svg>
+                        </a>
+
+                        <ul class="sub-nav">
+                            {% assign eventLoop = site.events | sort: 'date' %}
+                            {% assign pageId = page.id %}
+
+                            {% for event in eventLoop %}
+                                {% assign dataFile = event.id | remove: 'events' | remove: '/' %}
+
+                                {% capture new_var %}site.data.{{ dataFile }}{% endcapture %}
+                                {% assign url = event.url %}
+                                {% assign id = event.id %}
+
+                                {% for page in site.data[dataFile] %}
+                                <li {% if pageId == id %}class="is-active"{% endif %}>
+                                    <a href="{{ url }}">{{ page.name }}</a>
+                                </li>
+                                {% endfor %}
+                            {% endfor %}
+                            <li {% if page.id == 'events' %}class="is-active"{% endif %}>
+                                <a href="/events/">View All</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li {% if page.id == 'why-sponsor' %}class="is-active"{% endif %}>
+                        <a href="/why-sponsor/">Why Sponsor</a>
+                    </li>
+                    <li {% if page.id == 'faq' %}class="is-active"{% endif %}>
+                        <a href="/faq/">FAQ</a>
+                    </li>
+                    <li {% if page.id == 'contact' %}class="is-active"{% endif %}>
+                        <a href="/contact/">Contact</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="burger">
+            <div>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </div>
+</header>

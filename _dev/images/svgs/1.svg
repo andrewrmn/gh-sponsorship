@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>1</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="13.4304949%" y1="5.49611643%" x2="85.6182812%" y2="91.1316235%" id="linearGradient-1">
+            <stop stop-color="#1A82F9" offset="0%"></stop>
+            <stop stop-color="#0366D6" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="1.0-Home-Alt***" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-32.000000, -1450.000000)">
+        <g id="Text" transform="translate(32.000000, 1449.000000)">
+            <g id="1">
+                <circle id="Oval-4" stroke="url(#linearGradient-1)" stroke-width="2" cx="12" cy="13" r="11"></circle>
+                <polygon fill="#0366D6" points="11.8671875 18.5 11.8671875 9.5234375 11.7265625 9.5234375 8.9609375 11.4296875 8.9609375 9.234375 11.875 7.2265625 14.2265625 7.2265625 14.2265625 18.5"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,36 @@
+// ---------------------------------------------------------------------
+//  Animate In
+// ---------------------------------------------------------------------
+
+[data-animate-in] {
+	opacity: 0;
+	transition: opacity 0.5s ease, transform 0.4s ease;
+}
+
+[data-animate-in="up"] {
+	opacity: 0;
+	transform: translate3d(0, 50px, 0);
+}
+
+[data-animate-in="left"] {
+	transform: translate3d(-50%, 0, 0);
+}
+
+[data-animate-in="right"] {
+	transform: translate3d(50%, 0, 0);
+}
+
+[data-animate-in="down"] {
+	transform: translate3d(0, -24px, 0);
+}
+
+[data-animate-in="fade"] {
+	opacity: 0;
+	transform: translate3d(0, 0, 0);
+	transition: opacity 1s ease;
+}
+
+[data-animate-in].in-view {
+	opacity: 1;
+	transform: none;
+}

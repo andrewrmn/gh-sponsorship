@@ -1,0 +1,149 @@
+- name: Git Merge
+  date: March 7 - 8
+  location: Barcelona, Spain
+  capacity: 800 Attendees
+  shortDescription: Git Merge is dedicated to amplifying new voices in the Git community and showcasing the most thought-provoking projects from contributors, maintainers, and community managers around the world.
+
+  # Include path starting from the image folder i.e. marketing/GitHub-Image-Collage.jpg
+  featuredImg: events/gitmerge/gitmerge-hero.jpg
+  previewImg: events/gitmerge/GitMerge-Thumbnail.jpg
+
+
+  # Overview
+  overviewHeadline: What’s Git Merge
+
+  # <p> tags required for multiple paragraphs
+  overviewContent: |
+    <p>Git Merge is the annual Git community conference focused on the most used version control system and the people who use it.</p>
+
+    <p>This year Git Merge will be hosted at the Convent dels Àngels at MACBA in Barcelona. The main event on March 8 is a full-day, single-track conference featuring technical content for the Git community. Preceding the main event on March 7, we’ll host a full day of workshops and training sessions (for all levels) and the annual Git Contributors Summit.</p>
+  # Include path starting from the image folder i.e. marketing/GitHub-Image-Collage.jpg
+  overviewImg1: events/gitmerge/block-1@2x.jpg
+  overviewImgDesc1: Git Merge Conference
+  overviewImg2: events/gitmerge/block-2@2x.jpg
+  overviewImgDesc2: Git Merge attendees looking at a phone
+  overviewImg3: events/gitmerge/block-3@2x.jpg
+  overviewImgDesc3: Git Merge speaker on stage
+
+
+  # Demographics
+  demographicsHeadline: Audience Demographics
+  demographicsContent: This is a text area about the audience demographics to highlight the focus and the diversity in a few words or more.
+
+  jobTypes:
+    - title: Engineer/ Product
+      percentage: 65
+    - title: Technical Lead
+      percentage: 15
+    - title: Technical Executive
+      percentage: 15
+    - title: Business Executive
+      percentage: 5
+
+  companyTypes:
+    - title: Enterprise
+      percentage: 45
+    - title: Small/Medium Business
+      percentage: 25
+    - title: Startup/ Independent
+      percentage: 25
+    - title: Public/ Education
+      percentage: 5
+
+  locations:
+    - title: USA
+      percentage: 23
+    - title: International
+      percentage: 77
+
+
+  # GALLERY HERE 16 items
+
+
+
+  # Sponsorship
+  sponsorshipHeadline: Sponsorship opportunities
+  sponsorshipContent: Git Merge is a vendor-neutral event produced by GitHub on behalf of the Git community. Our sponsors are partners in a continued commitment to educate, inspire, and explore best practices and tools.
+
+  hasTable: false
+  levels:
+      - title: Community
+        shortDescription: By sponsoring Git Merge, you are supporting a community of users and developers who are dedicated to a tool that has become an integral part of all of our development workflows. All ticket proceeds benefit the Software Freedom Conservancy.
+        showInTable: true
+        tableDescription: The most 1:1 time with attendees
+        startingAt: $10,000
+        summary: Sponsorship is a flat $10,000 and includes
+
+        # put true or false for the following exepct badgeType, badgesDiscount, demoType, which all can be whatever you want
+        badge:
+        badgeCount:
+        badgesDiscount:
+        logoOnSite:
+        logoInCommunications:
+        logoOnSignage:
+        logoOnSlides:
+        onSitePresence:
+        demo:
+        demoType:
+        optInEmails:
+
+        additionalCheckmarks:
+          - item: Three complimentary conference badges plus 50% any additional badges (please note tickets to workshop day are separate)
+          - item: Logo on website with custom link
+          - item: Logo in email to attendees
+          - item: Logo on signage & interstitial slides
+          - item: Verbal ‘thank you’ on stage
+          - item: One hour per day at the Demo Desk
+          - item: Option to host your own gathering before or after the event, promoted to attendees
+
+        opportunitiesAlwaysShow: true
+        opportunities:
+          # - title: 
+          #   description:
+          #   price: $10,000
+          #   # if remainingQuantity is empty or at 0 this opportunity will be displayed as sold-out
+          #   remainingQuantity: 3
+
+      ##################################################################
+      ##################################################################
+      - title: Add-Ons
+        shortDescription: Sponsors wanting additional opportunities for engagement may select from two add-ons available at $15k each.
+        showInTable: false
+        startingAt: $15,000
+        summary:
+
+        additionalCheckmarks:
+          # - item: Custom branding, signage, and swag
+
+        opportunitiesAlwaysShow: true
+        opportunities:
+          - title: Demo Lounge
+            description: Uplevel your presence with a welcoming lounge and personal demo station. Customized with your branding, these spaces are a great way to connect with attendees throughout the event.
+            checkmarks:
+              - item: Custom branding and signage
+              - item: Private Demo station with monitor
+              - item: Additional shout out from stage
+            price: $15,000
+            # if remainingQuantity is empty or at 0 this opportunity will be displayed as sold-out
+            remainingQuantity: 2
+
+          # - title: Post-conference cocktail hour
+          #   description:
+          #   checkmarks:
+          #     - item: Custom branding, signage, and swag
+          #     - item: Additional mention on website and special thanks from stage
+          #     - item: Welcome speech at party kickoff with custom messaging
+          #   price: $10,000
+          #   # if remainingQuantity is empty or at 0 this opportunity will be displayed as sold-out
+          #   remainingQuantity: 1
+
+
+      ########################  End Levels   ###########################
+      ##################################################################
+
+  ctaHeadline: Join these fine companies and become a sponsor
+  ctaContent:
+  ctaLinkText: Contact Us
+  ctaLinkUrl: /contact/
+  ctaLinkText2:
+  ctaLinkUrl2:

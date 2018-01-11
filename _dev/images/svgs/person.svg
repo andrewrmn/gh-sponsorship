@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="12px" height="14px" viewBox="0 0 12 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>Shape</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="2.0-Events-Landing" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-398.000000, -985.000000)">
+        <g id="Event-Cards" transform="translate(64.000000, 552.000000)" fill="#586069" fill-rule="nonzero">
+            <g id="Event-Card">
+                <g id="Quick-Info" transform="translate(32.000000, 428.000000)">
+                    <g id="person" transform="translate(302.000000, 5.000000)">
+                        <path d="M12,13.002 C12,13.553 11.553,14 11.002,14 L1.001,14 C0.448,14 0,13.552 0,12.999 L0,12 C0,9.367 4,8 4,8 C4,8 4.229,7.591 4,7 C3.159,6.38 3.056,5.41 3,3 C3.173,0.587 4.867,0 6,0 C7.133,0 8.827,0.586 9,3 C8.944,5.41 8.841,6.38 8,7 C7.771,7.59 8,8 8,8 C8,8 12,9.367 12,12 L12,13.002 Z" id="Shape"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

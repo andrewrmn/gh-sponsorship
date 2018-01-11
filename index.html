@@ -1,0 +1,156 @@
+---
+layout: default
+title: Home
+id: home
+---
+
+{% for page in site.data.home %}
+
+
+<div class="intro">
+
+    <div class="intro__content universe-wrap" data-detect-viewport="">
+        <div data-animate-in="fade">
+            <h2 class="hxl">{{ page.headline }}</h2>
+            <p class="p-lg">{{ page.subHeadline }}</p>
+            {% if page.ctaLink and page.ctaText %}
+                <a class="btn btn-primary btn-inline" href="{{ page.ctaLink }}">{{ page.ctaText }}</a>
+            {% endif %}
+            {% if page.cta2Link and page.cta2Text %}
+                <a class="btn btn-outline" href="{{ page.cta2Link }}">{{ page.cta2Text }}</a>
+            {% endif %}
+        </div>
+        {% include stars.html %}
+    </div>
+
+    <figure class="master-blob" data-animate-in="fade">
+        {% include blob.html %}
+        <div class="bg-image">
+            <img src="/assets/images/marketing/GitHub-Universe-Octoshop.jpg" alt="GitHub Universe Octoshop" />
+        </div>
+    </figure>
+</div>
+
+<section class="container-full o-hidden pt-9 pb-9 pr-3 pl-3 border-top">
+    <header class="container text-center planet-wrap" data-animate-in="up">
+        <div class="col-12 col-md-9 mx-auto" data-animate-in="up">
+            <h3 class="h1">{{ page.sectionOneHeadline }}</h3>
+            {% if page.sectionOneContent %}
+            <div>
+                {{ page.sectionOneContent }}
+            </div>
+            {% endif %}
+            {% if page.sectionOneText and page.sectionOneLink %}
+                <a class="btn btn-primary mt-4" href="{{ page.sectionOneLink }}">{{ page.sectionOneText }}</a>
+            {% endif %}
+        </div>
+
+        {% include planets.html %}
+    </header>
+
+    <div class="container clearfix mt-8">
+        <div class="text-center mx-auto" data-animate-in="up">
+            <h4 class="h2">How It Works</h4>
+        </div>
+        <div class="col-12 col-md-4 float-left p-2 pr-md-4" data-animate-in="up">
+            <figure class="figure-shape mb-5 hide-sm hide-md">
+                <img data-animate-in="fade" data-animate-in-delay="200" src="/assets/images/marketing/GitHub-Universe-Octopus-sm.png" alt="GitHub Universe Octopus Display" />
+                <img data-animate-in="fade" class="bg" style="height: 234px" src="/assets/images/marketing/shape1-bg.svg" alt="background-shape" />
+            </figure>
+
+            <p class="has-count has-count--1 text-bold">{{ page.block1Headline }}</p>
+            <p>{{ page.block1Content }}</p>
+        </div>
+        <div class="col-12 col-md-4 float-left p-2 pr-md-4" data-animate-in="up">
+            <figure class="figure-shape mb-5 hide-sm hide-md">
+                <img data-animate-in="fade" data-animate-in-delay="200" src="/assets/images/marketing/GitHubbers-talking-at-event.png" alt="GitHub Universe Octopus Display" />
+                <img data-animate-in="fade" class="bg" style="height: 234px" src="/assets/images/marketing/shape2-bg.svg" alt="background-shape" />
+            </figure>
+            <p class="has-count has-count--2 text-bold">{{ page.block2Headline }}</p>
+            <p>{{ page.block2Content }}</p>
+        </div>
+        <div class="col-12 col-md-4 float-left p-2 pr-md-4" data-animate-in="up">
+            <figure class="figure-shape mb-5 hide-sm hide-md">
+                <img data-animate-in="fade" data-animate-in-delay="200" src="/assets/images/marketing/waffle-stand.png" alt="GitHub Universe Octopus Display" />
+                <img data-animate-in="fade" class="bg" style="height: 234px" src="/assets/images/marketing/shape3-bg.svg" alt="background-shape" />
+            </figure>
+            <p class="has-count has-count--3 text-bold">{{ page.block3Headline }}</p>
+            <p>{{ page.block3Content }}</p>
+        </div>
+    </div>
+</section>
+
+
+<section class="photoswipe" itemscope itemtype="http://schema.org/ImageGallery" data-animate-in="fade">
+    <div class="carousel">
+        {% for slides in page.gallery %}
+        <div>
+            <div class="blocks">
+                {% for img in slides.images %}
+                <figure class="block blocks__{{ forloop.index }}" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                  <a href="/assets/images/{{ img.image }}" itemprop="contentUrl" data-size="">
+                      <img src="/assets/images/{{ img.image }}" itemprop="thumbnail" alt="{{ img.alt }}" />
+                  </a>
+                </figure>
+                {% endfor %}
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</section>
+
+
+<section class="pt-9 pb-9" id="testimonials">
+
+    <div class="container-md mb-6">
+        <div class="card card--testimonial" data-animate-in="up">
+            <figure>
+                <img src="/assets/images/marketing/testimonial-fpo.png" alt="" />
+            </figure>
+            <div class="card__content">
+                <p class="text-bold">{{ page.testimonial1Author }}</p>
+                <p>{{ page.testimonial1AuthorTitle }}</p>
+                <q>{{ page.testimonial1 }}</q>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-md d-flex flex-justify-end">
+        <div class="card card--testimonial" data-animate-in="up">
+            <figure>
+                <img src="/assets/images/marketing/testimonial-fpo.png" alt="" />
+            </figure>
+            <div class="card__content">
+                <p class="text-bold">{{ page.testimonial2Author }}</p>
+                <p>{{ page.testimonial2AuthorTitle }}</p>
+                <q>{{ page.testimonial2 }}</q>
+            </div>
+        </div>
+    </div>
+
+    <div class="line-bg">
+        <svg viewBox="0 0 1280 406" data-detect-viewport="">
+        	<path class="line" fill="none" stroke="#E1E4E8" stroke-width="8" stroke-linecap="square" d="M1102,4v380c0,5.5-4.5,10-10,10H227
+        		c-5.5,0-10-4.5-10-10v-91c0-5.5-4.5-10-10-10H0"/>
+        	<circle id="path-1" fill="#E1E4E8" cx="83" cy="283" r="12"/>
+        	<circle fill="none" stroke="#FFFFFF" stroke-width="7" cx="83" cy="283" r="8.5"/>
+        	<circle id="path-2" fill="#FFFFFF" cx="289" cy="394" r="12"/>
+        	<circle fill="none" stroke="#E1E4E8" stroke-width="7" cx="289" cy="394" r="8.5"/>
+        	<circle id="path-3" fill="#FFFFFF" cx="1102" cy="32" r="12"/>
+        	<circle fill="none" stroke="#E1E4E8" stroke-width="7" cx="1102" cy="32" r="8.5"/>
+        	<path class="line" id="Line" fill="none" stroke="#E1E4E8" stroke-width="8" stroke-linecap="square" d="M0,61.5h47.9c2.7,0,5.2,1.1,7.1,2.9
+        		l97.1,97.1c1.9,1.9,4.4,2.9,7.1,2.9H1228c5.5,0,10,4.5,10,10V288c0,5.5,4.5,10,10,10h34"/>
+        	<circle id="path-4" fill="#FFFFFF" cx="22" cy="62" r="12"/>
+        	<circle fill="none" stroke="#E1E4E8" stroke-width="7" cx="22" cy="62" r="8.5"/>
+        	<circle id="path-5" fill="#FFFFFF" cx="157" cy="164" r="12"/>
+        	<circle fill="none" stroke="#E1E4E8" stroke-width="7" cx="157" cy="164" r="8.5"/>
+        	<circle id="path-6" fill="#FFFFFF" cx="1238" cy="244" r="12"/>
+        	<circle fill="none" stroke="#E1E4E8" stroke-width="7" cx="1238" cy="244" r="8.5"/>
+        	<circle id="path-7" fill="#E1E4E8" cx="1178" cy="164" r="12"/>
+        	<circle fill="none" stroke="#FFFFFF" stroke-width="7" cx="1178" cy="164" r="8.5"/>
+        </svg>
+    </div>
+</section>
+
+{% endfor %}
+{% include photoswipe.html %}

@@ -1,0 +1,326 @@
+// ---------------------------------------------------------------------
+//  Global Header Styles
+// ---------------------------------------------------------------------
+
+$header-breakpoint: md;
+$hb: $medium;
+$header-height-sm: 60px;
+$header-height: 76px;
+
+html {
+	background: $almost-black;
+}
+
+.site-header {
+	position: relative;
+	top: 0;
+	left: 0;
+	z-index: 10;
+	width: 100%;
+	background: $almost-black;
+	box-shadow: 0 1px 3px 0 rgba(0,0,0,0.21);
+}
+
+.site-header .site-header__inner {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	height: $header-height-sm;
+	transition: height $trans;
+
+	@include breakpoint($header-breakpoint) {
+		height: $header-height;
+	}
+}
+
+// ----------------------------------------
+// Logo Styles
+// ----------------------------------------
+
+$logo-width: 220px;
+$logo-height: 72px;
+
+.logo {
+	flex-grow: 1;
+
+	@include breakpoint($header-breakpoint) {
+		flex-grow: 0;
+	}
+
+	a {
+		display: block;
+		width: 149px;
+
+		@include stop-at($hb) {
+			margin: 0 auto;
+		}
+	}
+
+	img {
+		width: 100%;
+	}
+}
+
+
+// ----------------------------------------
+// Slidding Panel
+// ----------------------------------------
+
+.site-header-panel {
+	flex-grow: 1;
+
+	> * {
+		display: flex;
+		height: 100%;
+	}
+
+	a {
+		display: block;
+		font-weight: 500;
+		font-size: 16px;
+		color: #C6CBD1;
+		letter-spacing: -0.23px;
+		line-height: 21px;
+		transition: color $trans;
+		text-decoration: none;
+		padding: 8px;
+
+		@include stop-at($hb) {
+			color: #959DA5;
+		}
+
+		&:hover {
+			color: $white;
+		}
+	}
+
+	.has-sub-nav a svg {
+		display: none;
+	}
+
+	li.is-active > a {
+		color: $white;
+	}
+
+	@include breakpoint($header-breakpoint) {
+		display: flex;
+		justify-content: flex-end;
+		margin-left: 80px;
+		height: 100%;
+	    align-items: center;
+
+		.main-nav {
+			display: flex;
+			align-items: center;
+			height: 100%;
+
+			> li {
+				position: relative;
+				height: 100%;
+				align-items: center;
+				display: flex;
+
+				+ li {
+					margin-left: 10px;
+				}
+			}
+
+			> li:first-child {
+			   display: none;
+		    }
+
+			> li:last-child a {
+				background: $brand;
+				border-radius: 4px;
+				color: $white;
+				padding: 7px 27px;
+				margin-left: 6px;
+				transition: background $trans, border-color $trans;
+
+				&:hover {
+			        background: darken($brand, 5%);
+			        border-color: darken($brand, 5%);
+			    }
+			}
+		}
+
+		.has-sub-nav > a {
+			position: relative;
+			display: flex;
+			align-items: center;
+
+			svg {
+				display: block;
+				width: 8px;
+				height: 5px;
+				fill: currentColor;
+				margin-left: 4px;
+			}
+		}
+	}
+}
+
+@include stop-at($hb) {
+
+	$panel-width: 100%;
+
+	.site-header-panel {
+		position: fixed;
+		height: 100%;
+		width: $panel-width;
+		left: 0;
+		transform: translate3d(100%, 0, 0);
+		background: #2C3237;
+		z-index: 10;
+		bottom: $header-height-sm;
+		top: 0;
+		padding: 0 0 96px;
+		overflow: scroll;
+		transition: transform 0.3s ease;
+
+
+		> * {
+			display: flex;
+			align-items: flex-end;
+			width: 100%;
+			min-height: 100%;
+			height: auto;
+
+			&:before {
+				content: '';
+				display: block;
+				position: fixed;
+				top: 12px;
+				width: 32px;
+				height: 32px;
+				left: calc(50% - 16px);
+				z-index: 2;
+				background: url('../images/GitHub-logomark-white.svg') center / 32px 32px no-repeat;
+			}
+		}
+
+		.menu-is-open & {
+			transform: translate3d(0, 0, 0);
+		}
+
+		.menu-is-open {
+			overflow: hidden;
+		}
+
+
+
+		.main-nav {
+			width: 100%;
+			padding: 72px 48px 0;
+			//background: red;
+			display: block;
+			align-self: flex-end;
+			text-align: right;
+
+			a {
+				display: block;
+				width: 100%;
+				border-bottom: 1px solid rgba(#FAFAFA, 0.1);
+
+				&:hover {
+					color: $white;
+				}
+			}
+
+			li.is-active > a {
+				color: $white;
+			}
+
+			> * {
+
+			}
+		}
+
+		.sub-nav a {
+			font-size: 14px;
+			font-weight: 400;
+			//opacity: 0.6
+			color: $gray-600;
+		}
+
+		.sub-nav li:last-child {
+			display: none;
+		}
+	}
+
+	// ----------------------------------------
+	// Menu Is Open
+	// ----------------------------------------
+	.menu-is-open {
+		overflow: hidden;
+	}
+}
+
+
+
+// ----------------------------------------
+// Sub Nav
+// ----------------------------------------
+
+@include breakpoint($header-breakpoint) {
+	.site-header-panel ul.sub-nav {
+		position: absolute;
+		top: calc(100% - 8px);
+		left: -16px;
+		background: $white;
+		border-radius: 4px;
+		box-shadow: 0 0 5px -1px rgba($black, 0.6);
+		min-width: 200px;
+		display: none;
+		padding: 4px 0;
+		height: auto;
+		z-index: 2;
+
+		&:before {
+			content: '';
+			position: absolute;
+			display: block;
+			width: 16px;
+			height: 16px;
+			box-shadow: -1px -1px 1px 0px rgba($black, .1);
+			background: $white;
+			transform: rotate(45deg);
+			top: -8px;
+			left: 28px;
+			z-index: -1;
+		}
+
+		li {
+			display: block;
+		}
+
+		// > li:last-child a {
+		// 	border-radius: 0 0px 4px 4px;
+		// }
+
+		a {
+			color: $gray-dark;
+			padding: 8px 24px;
+			font-size: 14px;
+			transition: background $trans, color $trans;
+
+			&.is-active {
+				color: $black;
+			}
+
+			&:hover {
+				color: $white;
+				background: $blue-500;
+			}
+		}
+
+		li.is-active a {
+			background: $blue-500;
+			color: $white;
+		}
+	}
+
+	li:hover .sub-nav {
+		display: block;
+	}
+}

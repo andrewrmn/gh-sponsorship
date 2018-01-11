@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="11px" height="14px" viewBox="0 0 11 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>Shape</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="2.0-Events-Landing" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-96.000000, -985.000000)">
+        <g id="Event-Cards" transform="translate(64.000000, 552.000000)" fill="#586069" fill-rule="nonzero">
+            <g id="Event-Card">
+                <g id="Quick-Info" transform="translate(32.000000, 428.000000)">
+                    <g id="location" transform="translate(0.000000, 5.000000)">
+                        <path d="M5.5,0 C2.46583333,0 0,2.1875 0,4.8125 C0,8.7675 5.5,14 5.5,14 C5.5,14 11,8.7675 11,4.8125 C11,2.1875 8.53416667,0 5.5,0 Z M5.5,12.73125 C3.795,10.955 0.916666667,7.385 0.916666667,4.8125 C0.916666667,2.6425 2.97916667,0.875 5.5,0.875 C6.72833333,0.875 7.8925,1.295 8.76333333,2.065 C9.60666667,2.8175 10.0833333,3.78875 10.0833333,4.8125 C10.0833333,7.385 7.205,10.955 5.5,12.73125 Z M7.33333333,4.8125 C7.33333333,5.78375 6.5175,6.5625 5.5,6.5625 C4.4825,6.5625 3.66666667,5.78375 3.66666667,4.8125 C3.66666667,3.84125 4.4825,3.0625 5.5,3.0625 C6.5175,3.0625 7.33333333,3.84125 7.33333333,4.8125 Z" id="Shape"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

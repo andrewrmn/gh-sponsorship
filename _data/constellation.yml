@@ -1,0 +1,153 @@
+- name: GitHub Constellation
+  date: April 23 - 24
+  location: Multiple Cities
+  capacity: 500 Attendees
+  shortDescription: Join the GitHub Team for a two-part event celebrating software builders and entrepreneurs in your community. Whether you’re a new developer or leading a team of them, we’ve got you covered.
+
+  # Include path starting from the image folder i.e. marketing/GitHub-Image-Collage.jpg
+  featuredImg: events/constellation/constellation-hero.jpg
+  previewImg: events/constellation/Constellation-Thumbnail.jpg
+
+  # Overview
+  overviewHeadline: What is Constellation?
+
+  # <p> tags required for multiple paragraphs
+  overviewContent: |
+    <p>Meet experts, share work, and contribute to the future of software—together at this two-day event.</p>
+
+    <h3>Day 1: Explore</h3>
+    <p>Hear from the area's top tech and community leaders, and meet fellow builders at this one-of-kind community conference. We’ll spend an evening exploring what’s new, what’s to come, and how you can get involved.</p>
+
+    <h3>Day 2: Align</h3>
+    <p>The second day brings together team leaders and entrepreneurs to discuss what (and how) they’re using GitHub at work.</p>
+
+  # Include path starting from the image folder i.e. marketing/GitHub-Image-Collage.jpg
+  overviewImg1: collage/GitHub_Selects_KWW-207.jpg
+  overviewImgDesc1:
+  overviewImg2: collage/57854.jpg
+  overviewImgDesc2:
+  overviewImg3: collage/GitHub_Selects_KWW-111.jpg
+  overviewImgDesc3:
+
+
+  # Demographics
+  demographicsHeadline: Audience Demographics
+  demographicsContent: This is a text area about the audience demographics to highlight the focus and the diversity in a few words or more.
+
+  jobTypes:
+    - title: Engineer/ Product
+      percentage: 65
+    - title: Technical Lead
+      percentage: 15
+    - title: Technical Executive
+      percentage: 15
+    - title: Business Executive
+      percentage: 5
+
+  companyTypes:
+    - title: Enterprise
+      percentage: 45
+    - title: Small/Medium Business
+      percentage: 25
+    - title: Startup/ Independent
+      percentage: 25
+    - title: Public/ Education
+      percentage: 5
+
+  locations:
+    - title: USA
+      percentage: 23
+    - title: International
+      percentage: 77
+
+
+  # GALLERY HERE 16 items
+
+
+
+  # Sponsorship
+  sponsorshipHeadline: Sponsorship Levels & Opportunities
+  sponsorshipContent: You won’t find typical sponsorships like tradeshow booths and paper flyers at Universe. We deliver sponsorships that create memorable and meaningful interactions with attendees, and that add value to the attendee experience.
+
+  hasTable: false
+  levels:
+      - title: Community
+        shortDescription: By sponsoring Constellation, you are supporting a community of users and developers who are dedicated to a tool that has become an integral part of all of our development workflows. All ticket proceeds benefit the Software Freedom Conservancy.
+        showInTable: true
+        tableDescription: The most 1:1 time with attendees
+        startingAt: $10,000
+        summary: Sponsorship is a flat $10,000 and includes
+
+        # put true or false for the following exepct badgeType, badgesDiscount, demoType, which all can be whatever you want
+        badge:
+        badgeCount:
+        badgesDiscount:
+        logoOnSite:
+        logoInCommunications:
+        logoOnSignage:
+        logoOnSlides:
+        onSitePresence:
+        demo:
+        demoType:
+        optInEmails:
+
+        additionalCheckmarks:
+          - item: Three complimentary conference badges plus 50% any additional badges (please note tickets to workshop day are separate)
+          - item: Logo on website with custom link
+          - item: Logo in email to attendees
+          - item: Logo on signage & interstitial slides
+          - item: Verbal ‘thank you’ on stage
+          - item: One hour per day at the Demo Desk
+          - item: Option to host your own gathering before or after the event, promoted to attendees
+
+        opportunitiesAlwaysShow: false
+        opportunities:
+          # - title: Community
+          #   description:
+          #   price: $3,000
+          #   # if remainingQuantity is empty or at 0 this opportunity will be displayed as sold-out
+          #   remainingQuantity: 0
+
+      ##################################################################
+      ##################################################################
+      - title: Add-Ons
+        shortDescription: Sponsors wanting additional opportunities for engagement may select from two add-ons available at $15k each.
+        showInTable: false
+        startingAt: $15,000
+        summary:
+
+        additionalCheckmarks:
+          # - item: Custom branding, signage, and swag
+
+        opportunitiesAlwaysShow: true
+        opportunities:
+          # - title: Demo Lounge
+          #   description: Uplevel your presence with a welcoming lounge and personal demo station. Customized with your branding, these spaces are a great way to connect with attendees throughout the event.
+          #   checkmarks:
+          #     - item: Custom branding and signage
+          #     - item: Private Demo station with monitor
+          #     - item: Additional shout out from stage
+          #   price: $15,000
+          #   # if remainingQuantity is empty or at 0 this opportunity will be displayed as sold-out
+          #   remainingQuantity: 2
+
+          # - title: Post-conference cocktail hour
+          #   description:
+          #   checkmarks:
+          #     - item: Custom branding, signage, and swag
+          #     - item: Additional mention on website and special thanks from stage
+          #     - item: Welcome speech at party kickoff with custom messaging
+          #   price: $1,000
+          #   # if remainingQuantity is empty or at 0 this opportunity will be displayed as sold-out
+          #   remainingQuantity: 1
+
+
+      ########################  End Levels   ###########################
+      ##################################################################
+
+  ctaHeadline: Join these fine companies and become a sponsor
+  ctaContent:
+  ctaLinkText: Contact Us
+  ctaLinkUrl: /contact/
+  ctaLinkText2:
+  ctaLinkUrl2:

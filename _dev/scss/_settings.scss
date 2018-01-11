@@ -1,0 +1,90 @@
+// ---------------------------------------------------------------------
+//  SCSS Settings
+// ---------------------------------------------------------------------
+
+
+// ----------------------------------------
+// Fonts
+// ----------------------------------------
+
+// Normal (300)
+$display: 'SFUI-display', mono, sans-serif;
+
+// Font weights: normal | 500 \ 700
+$sans-serif: 'SFUI-text', mono, sans-serif;
+
+$mono: 'sf_mono', mono, sans-serif;
+
+
+// ----------------------------------------
+// Font Size/ Line Height
+// ----------------------------------------
+$main-font: $sans-serif;
+$base-font-size: 16px;
+$base-line-height: 1.5;
+
+
+// ----------------------------------------
+// Colors
+// ----------------------------------------
+
+
+$brand: #21BD45; // Green
+
+$gray: #586069;
+$white: #fff;
+$black: #24292E;
+$almost-black: #2C3237;
+
+
+$gray-light: #f6f8fa;
+
+$gray-dark: #3a3a3a;
+$error: #DC3545;
+
+
+// ----------------------------------------
+// Breakpoints
+// ----------------------------------------
+
+$xlarge: 1280px;
+$large: 1012px;
+$medium: 768px;
+$small: 544px;
+
+// $sm: 544px;
+// $md: 768px;
+// $lg: 1012px;
+// $xl: 1280px;
+
+
+
+@mixin start-at($device-width) {
+  @media (min-width: $device-width) {
+    @content;
+  }
+}
+
+
+
+@mixin stop-at($device-width) {
+  @media (max-width: $device-width - 1) {
+    @content;
+  }
+}
+
+
+// ----------------------------------------
+// Global Variables
+// ----------------------------------------
+
+$header-breakpoint: $small;
+
+$transition-speed: 0.4s;
+$transition: $transition-speed ease;
+// cuz I no type good
+$trans: $transition-speed ease;
+
+$wrapper-percentage: 94%;
+$wrapper-width: 1152px;
+$wrapper-padding: (100% - $wrapper-percentage) / 2;
