@@ -1,0 +1,9 @@
+- headline: GitHub Events
+  subHeadline: Event Schedule
+  ctaText: 
+  ctaLink:
+  cta2Text:
+  cta2Link:
+  # Include path starting from the image folder i.e. marketing/GitHub-Image-Collage.jpg
+  featuredImg: marketing/eventlanding-hero-bkg.jpg
+  featuredImgDesc: Git Merge design

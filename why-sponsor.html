@@ -6,8 +6,8 @@ permalink: /why-sponsor/
 ---
 {% for page in site.data.why-sponsor %}
 
-<div class="hero hero--dark">
-    <div class="hero__content" data-animate-in="fade">
+<div class="blankslate">
+    <div class="blankslate__content" data-animate-in="fade">
         <h2 class="hxl text-white">{{ page.headline }}</h2>
         <p class="p-lg-alt text-white">{{ page.subHeadline }}</p>
         {% if page.ctaLink and page.ctaText %}
@@ -30,7 +30,7 @@ permalink: /why-sponsor/
             <p>{{ page.sectionOneContent }}</p>
         </div>
     </div>
-    <div class="media-object__figure" data-animate-in="up">
+    <div class="media-object__figure hide-sm hide-md" data-animate-in="up">
         <img class="mb-3 mx-auto" style="max-width: 96%; width: 480px;" src="/assets/images/{{ page.sectionOneImg }}" alt="{{ page.sectionOneImgDesc }}" />
     </div>
 </div>
@@ -59,7 +59,7 @@ permalink: /why-sponsor/
 
 
 <div class="container-full mt-9 mb-9">
-    <div class="container container--thin text-center mb-6" data-animate-in="fade">
+    <div class="container container--thin text-center pr-3 pl-3 mb-6" data-animate-in="fade">
         <h3 class="h1">{{ page.sectionThreeHeadline }}</h3>
         <p>{{ page.sectionThreeContent }}</p>
     </div>
@@ -88,10 +88,10 @@ permalink: /why-sponsor/
 </div>
 
 
-<aside class="blankslate blankslate--gradient pt-9 pb-9">
+<aside class="blankslate blankslate--gradient pr-3 pl-3 pt-9 pb-9">
     <div data-animate-in="fade">
-        <h4 class="h1 text-white">{{ page.ctaHeadline }}</h4>
-        <p class="text-white">{{ page.ctaContent }}</p>
+        <p class="h1 text-white">{{ page.ctaHeadline }}</p>
+        {% if page.ctaContent %}<p class="text-white">{{ page.ctaContent }}</p>{% endif %}
         {% if page.ctaLinkText and page.ctaLinkUrl %}
             <a class="btn btn-primary btn-inline" href="{{ page.ctaLinkUrl }}">{{ page.ctaLinkText }}</a>
         {% endif %}

@@ -1,8 +1,8 @@
 {% if page.id == "events" or page.id == "home" %}
 <aside class="{% if page.type == 'event' %}bg-gray{% endif %} pt-9 pb-9">
-    <div class="container">
+    <div class="container pl-3 pr-3">
         <div class="text-center mb-6" data-animate-in="fade">
-            <h4 class="p">GitHub Sponsors</h4>
+            <h3 class="p">GitHub Sponsors</h3>
             <p class="h1">Proudly working with world-class companies</p>
         </div>
         <ul class="logo-list" data-animate-in="fade">
@@ -21,8 +21,8 @@
 {% if page.id == "home" %}
 {% for page in site.data.home %}
 <aside class="blankslate blankslate--gradient pt-9 pb-9">
-    <div data-animate-in="fade">
-        <h4 class="h1 text-white">{{ page.ctaHeadline }}</h4>
+    <div class="pl-3 pr-3" data-animate-in="fade">
+        <p class="h1 text-white">{{ page.ctaHeadline }}</p>
         {% if page.ctaContent %}<p class="text-white">{{ page.ctaContent }}</p>{% endif %}
         {% if page.ctaLinkText and page.ctaLinkUrl %}
             <a class="btn btn-outline-white" href="{{ page.ctaLinkUrl }}">{{ page.ctaLinkText }}</a>

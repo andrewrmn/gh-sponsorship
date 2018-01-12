@@ -14,11 +14,12 @@
 
 
 @mixin hxl {
+    font-family: $alt;
     font-size: $h00-size-mobile;
     font-weight: 300 !important;
     letter-spacing: 0.4px;
     line-height: 1;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     //font-weight: normal !important;
 
     @include breakpoint(md){
@@ -27,6 +28,7 @@
 }
 
 @mixin hlg {
+    font-family: $alt;
     font-size: $h0-size-mobile;
     font-weight: 300 !important;
     letter-spacing: 0.5px;
@@ -134,8 +136,10 @@
 }
 
 @mixin p-lg {
+    font-family: $display;
     font-size: 2.4rem;
     font-weight: 300;
+    letter-spacing: 0.2px;
 }
 
 @mixin p-sm {

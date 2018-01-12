@@ -6,10 +6,9 @@ permalink: /contact/
 ---
 
 
-
-    <header class="hero hero--dark hero--short">
+    <header class="blankslate">
         {% for page in site.data.contact %}
-        <div class="hero__content" data-animate-in="fade">
+        <div class="blankslate__content" data-animate-in="fade">
             <h2 class="hxl text-white">{{ page.headline }}</h2>
             <p class="p-lg-alt text-white">{{ page.subHeadline }}</p>
             {% if page.ctaLink and page.ctaText %}
@@ -26,17 +25,15 @@ permalink: /contact/
         {% endfor %}
     </header>
 
-
-
     <div class="container pt-8 pb-8 pl-3 pr-3">
-        <form data-animate-in="up" validate="validate">
+        <form action="" data-animate-in="up" >
             <h3 class="h2">Contact Events Team</h3>
 
             <div>
                 <div class="form-group">
                     <label for="name">Name</label>
                     <input class="form-control input-block" placeholder="First and Last Name" type="text" id="name" required>
-                    <dd class="error" id="form-error-text">This example input has an error.</dd>
+                    <p class="error" id="form-error-text">This example input has an error.</p>
                 </div>
 
                 <div class="form-group">

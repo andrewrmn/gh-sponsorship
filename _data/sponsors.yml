@@ -199,7 +199,7 @@
     - id: universe
 
 - name: Sentry
-  logo: sentry.png
+  logo: Sentry.png
   url: https://sentry.io/welcome/
   events:
     - id: gitmerge

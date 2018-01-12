@@ -6,7 +6,7 @@
 
   # Include path starting from the image folder i.e. marketing/GitHub-Image-Collage.jpg
   featuredImg: events/satellite/satellite-hero.jpg
-  previewImg: events/universe/Universe-Thumbnail.jpg
+  previewImg: events/satellite/Satellite-Thumbnail.jpg
 
 
   # Overview

@@ -1,8 +1,8 @@
 
 
 <article id="event-{{ event.name | slugify }}" class="github-event">
-    <header class="hero hero--border">
-        <div class="hero__content" data-animate-in="fade">
+    <header class="blankslate blankslate--dark blankslate--border">
+        <div class="blankslate__content" data-animate-in="fade">
             <p class="text-bold text-white">{{ event.date }} | {{ event.location }}</p>
             <h2 class="hxl text-white">{{ event.name }}</h2>
             <p class="p-lg-alt text-white">{{ event.shortDescription }}</p>
@@ -12,7 +12,7 @@
         </figure>
 
         {% if event.gallery != null %}
-        <div class="hero__photos js-open-gallery" data-animate-in="fade">
+        <div class="blankslate__footer js-open-gallery" data-animate-in="fade">
             <div>
                 <div class="icon-btn icon-btn--white">
                     <svg viewBox="0 0 16 12">
@@ -37,7 +37,7 @@
             <div class="UnderlineNav__title">
                 <p class="p-sm text-flush text-bold">{{ event.name }}</p>
             </div>
-            <div class="UnderlineNav-body">
+            <div class="UnderlineNav-body" role="tablist">
                 <a href="#overview" role="tab" title="Item 1" class="UnderlineNav-item selected" data-scroll-to="overview" data-scroll-offset="54" data-click-group="nav">Overview</a>
                 <a href="#Demographics" role="tab" title="Item 3" class="UnderlineNav-item" data-scroll-to="Demographics" data-scroll-offset="54" data-click-group="nav">Demographics</a>
                 {% if event.levels != null %}
@@ -49,7 +49,7 @@
 
     <div class="js-page-section" id="overview">
         <div class="media-object">
-            <div class="media-object__content">
+            <div class="media-object__content" data-animate-in="fade">
                 <div>
                     <h3 class="h1">{{ event.overviewHeadline }}</h3>
                     {{ event.overviewContent }}
@@ -182,7 +182,7 @@
             {% endif %}
                 <div class="levels mt-7 mb-8">
                     <nav class="levels__nav side-nav">
-                        <h4 class="text-bold">Levels</h4>
+                        <p class="side-nav__title text-bold">Levels</p>
                         <ul>
                             {% for level in event.levels %}
                             <li>
@@ -302,9 +302,8 @@
                         {% endfor %}
                     </div>
                 </div>
-            </div>
-
             {% if event.hasTable == true %}
+            </div>
             <div class="tabs__content" id="Comparison-Table">
                 <div class="table-wrap container-wide mt-7">
                     <table>
@@ -463,6 +462,7 @@
 
     <!-- Gallery 2  -->
     <section class="photoswipe is-hidden" itemscope itemtype="http://schema.org/ImageGallery">
+        <h3 class="sr-only">Photo Gallery</h3>
         {% for image in event.gallery %}
         <figure class="block" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
           <a href="{{ site.url }}/assets/images/{{ image.image }}" itemprop="contentUrl" data-size="">
@@ -483,8 +483,8 @@
     <div class="container pr-3 pl-3">
         {% if event.ctaHeadline and event.ctaLinkText and event.ctaLinkUrl %}
         <div class="text-center mb-6" data-animate-in="fade">
-            <h4 class="h1">{{ event.ctaHeadline }}</h4>
-            <p>{{ event.ctaContent }}</p>
+            <p class="h1">{{ event.ctaHeadline }}</p>
+            {% if event.ctaContent %}<p>{{ event.ctaContent }}</p>{% endif %}
             {% if event.ctaLinkText and event.ctaLinkUrl %}
                 <a class="btn btn-primary btn-inline" href="{{ event.ctaLinkUrl }}">{{ event.ctaLinkText }}</a>
             {% endif %}

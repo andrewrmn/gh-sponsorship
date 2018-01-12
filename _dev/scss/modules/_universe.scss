@@ -11,7 +11,6 @@
     height: 116px;
     margin: 0;
     padding: 0;
-    //background: $gray-light;
     z-index: -1;
 
     @include stop-at($medium) {
@@ -62,8 +61,6 @@
     z-index: 1;
 }
 
-.universe-icons-left,
-.universe-icons-right,
 .universe-icons {
     position: absolute;
     z-index: -1;
@@ -93,29 +90,6 @@
     }
 }
 
-.universe-icons-left {
-    bottom: 0;
-    right: -8px;
-    max-width: 72px;
-
-    @include breakpoint(md) {
-        // top: 144px;
-        // left: 32px;
-        max-width: 144px;
-    }
-}
-.universe-icons-right {
-    top: -80px;
-    left: 2px;
-    max-width: 96px;
-
-    @include breakpoint(md) {
-        // top: 32px;
-        // left: 32px;
-        max-width: 200px;
-    }
-}
-
 .universe-1 {
     top: 10px;
     left: 10px;
@@ -142,10 +116,4 @@
     @include breakpoint(md) {
         right: -60px;
     }
-}
-
-#Demographics .universe-icons-left {
-    transform-origin: center;
-    transform: rotateZ(180deg);
-    top: 32px;
 }

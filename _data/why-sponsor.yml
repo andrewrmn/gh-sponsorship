@@ -5,7 +5,7 @@
   cta2Text: Learn more about our events
   cta2Link: /events/
   # Include path starting from the image folder i.e. marketing/GitHub-Image-Collage.jpg
-  featuredImg: marketing/why-hero-bkg.jpg
+  featuredImg: marketing/why-sponsor/why-hero-bkg.jpg
   featuredImgDesc: GitHub Universe design
 
 
@@ -13,18 +13,18 @@
   sectionOneHeadline: Why events are different
   sectionOneContent: Universe highlights how software opens up possibilities that are otherwise unavailable. It brings people together to work on challenges that are bigger than any one person can tackle. Working together means creating ideas and finding solutions that are unique to that collection of people. Through software, we can achieve a sum that is greater than our parts.
   # Include path starting from the image folder i.e. marketing/GitHub-Image-Collage.jpg
-  sectionOneImg: marketing/GitHub-Universe-Octopus.png
+  sectionOneImg: marketing/why-sponsor/GitHub-Universe-Octopus.jpg
   sectionOneImgDesc: GitHub Universe Octopus Display
 
   # Section Two
   sectionTwoHeadline: Audience Demographics
   sectionTwoContent: Universe highlights how software opens up possibilities that are otherwise unavailable. It brings people together to work on challenges that are bigger than any one person can tackle. Working together means creating ideas and finding solutions that are unique to that collection of people. Through software, we can achieve a sum that is greater than our parts.
   # Include path starting from the image folder i.e. marketing/GitHub-Image-Collage.jpg
-  sectionTwoImg1: marketing/why-block-1.jpg
+  sectionTwoImg1: marketing/why-sponsor/why-block-1.jpg
   sectionTwoImgDesc1:
-  sectionTwoImg2: marketing/why-block-2.jpg
+  sectionTwoImg2: marketing/why-sponsor/why-block-2.jpg
   sectionTwoImgDesc2:
-  sectionTwoImg3: marketing/why-block-3.jpg
+  sectionTwoImg3: marketing/why-sponsor/why-block-3.jpg
   sectionTwoImgDesc3:
 
   # Section Three

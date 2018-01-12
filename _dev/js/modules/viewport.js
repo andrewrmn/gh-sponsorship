@@ -36,9 +36,9 @@ class Viewport {
 					el.addClass('in-view');
 				}
 			} else {
-				if(el.hasClass('in-view')){
-					el.removeClass('in-view');
-				}
+				// if(el.hasClass('in-view')){
+				// 	el.removeClass('in-view');
+				// }
 			}
 		}
 
