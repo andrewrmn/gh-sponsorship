@@ -138,7 +138,7 @@ class ClickFunctions {
 					details.slideUp();
 
 					$('html, body').animate({
-						scrollTop: details.offset().top - 66
+						scrollTop: details.offset().top - 86
 					}, 400);
 
 				} else {

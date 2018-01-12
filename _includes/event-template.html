@@ -52,7 +52,7 @@
             <div class="media-object__content" data-animate-in="fade">
                 <div>
                     <h3 class="h1">{{ event.overviewHeadline }}</h3>
-                    {{ event.overviewContent }}
+                    <p>{{ event.overviewContent }}</p>
                 </div>
             </div>
             <div class="media-object__figure">
@@ -79,9 +79,9 @@
 
                 <div class="mt-4 d-flex flex-justify-center">
                     <nav class="subnav" aria-label="Respository">
-                      <a href="#job-type" class="tabs__tab subnav-item selected" aria-current="page">Job Type</a>
-                      <a href="#company-type" class="tabs__tab subnav-item">Company Type</a>
-                      <a href="#location" class="tabs__tab subnav-item">Location</a>
+                        {% for tab in event.demographicTabs %}
+                            <a href="#{{ tab.title | slugify }}" class="tabs__tab subnav-item {% if forloop.index == 1 %}selected{% endif %}" {% if forloop.index == 1 %}aria-current="page"{% endif %}>{{ tab.title }}</a>
+                        {% endfor %}
                     </nav>
                 </div>
             </div>
@@ -89,29 +89,28 @@
 
         <div class="pb-8 pl-3 pr-3">
 
-            <div class="tabs__content" id="job-type">
+            {% for tab in event.demographicTabs %}
+            <div class="tabs__content" id="{{ tab.title | slugify }}">
                 <div class="demographic-tile">
+                    {% if tab.chartType == 'bar' %}
                     <div class="demographic-tile__inner">
-                        {% for jobType in event.jobTypes %}
-                        <div class="bar-graph" data-detect-viewport="" data-graph="{{ jobType.percentage }}">
+                        {% for chart in tab.charts %}
+                        <div class="bar-graph" data-detect-viewport="" data-graph="{{ chart.percentage }}">
                             <div class="graph">
                                 <div></div>
                                 <p><span class="js-percent">0</span>%</p>
                                 <div class="graph-fill"></div>
                             </div>
-                            <p>{{ jobType.title }}</p>
+                            <p>{{ chart.title }}</p>
                         </div>
                         {% endfor %}
                     </div>
-                </div>
-            </div>
+                    {% endif %}
 
-
-            <div class="tabs__content" id="company-type">
-                <div class="demographic-tile">
+                    {% if tab.chartType == 'round' %}
                     <div class="round-graph__wrap">
-                        {% for companyType in event.companyTypes %}
-                        <div class="round-graph" data-detect-viewport="" data-graph="{{ companyType.percentage }}">
+                        {% for chart in tab.charts %}
+                        <div class="round-graph" data-detect-viewport="" data-graph="{{ chart.percentage }}">
                             <figure>
                                 <p><span class="js-percent">0</span>%</p>
                                 <svg version="1.1" viewBox="0 0 106 106">
@@ -119,28 +118,28 @@
                                      <circle class="outer" fill="none" stroke="#086CDE" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" cx="53" cy="53" r="49"/>
                                 </svg>
                             </figure>
-                            <p>{{ companyType.title }}</p>
+                            <p>{{ chart.title }}</p>
                         </div>
                         {% endfor %}
                     </div>
-                </div>
-            </div>
+                    {% endif %}
 
-            <div class="tabs__content" id="location">
-                <div class="demographic-tile">
+                    {% if tab.chartType == 'flat' %}
                     <div class="bar-graph-horizontal-wrap">
-                        {% for location in event.locations %}
-                        <div class="bar-graph bar-graph--horizontal" data-detect-viewport="" data-graph="{{ location.percentage }}">
+                        {% for chart in tab.charts %}
+                        <div class="bar-graph bar-graph--horizontal" data-detect-viewport="" data-graph="{{ chart.percentage }}">
                             <div class="graph">
                                 <div class="graph-fill"></div>
                                 <p><span class="js-percent">0</span>%</p>
                             </div>
-                            <p>{{ location.title }}</p>
+                            <p>{{ chart.title }}</p>
                         </div>
                         {% endfor %}
                     </div>
+                    {% endif %}
                 </div>
             </div>
+            {% endfor %}
         </div>
 
 
@@ -202,14 +201,17 @@
                                     <p>{{ level.shortDescription }}</p>
                                 </div>
                                 <div>
-                                    <p class="p-sm"><span class="p-sm">Starting at</span> <span class="h4">{{ level.startingAt }}</span></p>
+                                    <p class="p-sm">{% if level.showStartingAt == true %}<span class="p-sm">Starting at</span>{% endif %} <span class="h4">{{ level.startingAt }}</span></p>
                                 </div>
                             </header>
 
                             <div class="mt-4">
                                 {% if level.summary %}
                                 <h5 class="p text-bold mb-2">Summary</h5>
-                                <p class="p-sm">{{ level.summary }}</p>
+                                <div class="level__summary">
+                                    <p class="p-sm">{{ level.summary }}</p>
+                                </div>
+
                                 {% endif %}
 
                                 <ul class="checklist mt-4">

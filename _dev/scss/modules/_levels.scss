@@ -83,6 +83,12 @@
     }
 }
 
+.level__summary {
+    p {
+        @include p-sm;
+    }
+}
+
 
 // ----------------------------------------
 // Opportunities

@@ -1,8 +1,8 @@
 - name: GitHub Satellite
-  date: Oct 16 - 17
-  location: San Francisco, CA
-  capacity: 2000 Attendees
-  shortDescription: GitHub Satellite is a two-day conference dedicated to exploring what’s next in the GitHub universe.
+  date: June 12 - 13
+  location: Tokyo
+  capacity: 800 attendees
+  shortDescription: GitHub Satellite is a two-day regional extension of GitHub Universe, our flagship conference, dedicated to the future of code.
 
   # Include path starting from the image folder i.e. marketing/GitHub-Image-Collage.jpg
   featuredImg: events/satellite/satellite-hero.jpg
@@ -13,10 +13,8 @@
   overviewHeadline: What is GitHub Satellite?
 
   # <p> tags required for multiple paragraphs
-  overviewContent: |
-    <p>Universe is GitHub’s flagship four-track conference. It brings together approximately 1,800 attendees from all areas of the software community to explore the future of development and the tools that can help us get there.</p>
+  overviewContent: This extension of the GitHub Universe conference brings big ideas from our flagship conference to cities around the world. From the latest GitHub product news to hands-on workshops, this event brings together thousands of developers to explore what’s next.
 
-    <p>The full program gives attendees two days of discovery with executive keynotes, dozens of speakers from prominent software companies, workshops, and an after party.</p>
   # Include path starting from the image folder i.e. marketing/GitHub-Image-Collage.jpg
   overviewImg1: events/universe/universe-block-1.jpg
   overviewImgDesc1: outdoor seating at Universe
@@ -30,31 +28,41 @@
   demographicsHeadline: Demographic Breakdown
   demographicsContent: From engineers to executives, our events attract a wide range of people who share a passion for building better software.
 
-  jobTypes:
-    - title: Engineer/ Product
-      percentage: 65
-    - title: Technical Lead
-      percentage: 15
-    - title: Technical Executive
-      percentage: 15
-    - title: Business Executive
-      percentage: 5
+  demographicTabs:
+    - title: Job Types
+      # bar, round, flat
+      chartType: bar
+      charts:
+        - title: Engineer/ Product
+          percentage: 65
+        - title: Technical Lead
+          percentage: 15
+        - title: Technical Executive
+          percentage: 15
+        - title: Business Executive
+          percentage: 5
 
-  companyTypes:
-    - title: Enterprise
-      percentage: 45
-    - title: Small/Medium Business
-      percentage: 25
-    - title: Startup/ Independent
-      percentage: 25
-    - title: Public/ Education
-      percentage: 5
+    - title: Company Types
+      # bar, round, flat
+      chartType: round
+      charts:
+        - title: Enterprise
+          percentage: 45
+        - title: Small/Medium Business
+          percentage: 25
+        - title: Startup/ Independent
+          percentage: 25
+        - title: Public/ Education
+          percentage: 5
 
-  locations:
-    - title: USA
-      percentage: 65
-    - title: International
-      percentage: 35
+    - title: Location
+      # bar, round, flat
+      chartType: flat
+      charts:
+        - title: International
+          percentage: 65
+        - title: USA
+          percentage: 35
 
 
   # Include path starting from the image folder i.e. marketing/GitHub-Image-Collage.jpg
@@ -74,7 +82,10 @@
         showInTable: true
         tableDescription: The most 1:1 time with attendees
         startingAt: $50,000
-        summary: Engage sponsorships are for companies that seek a high level of personal interaction with developers and technical leadership onsite. Featuring private demo stations and spacious, welcoming layouts, these opportunities are the perfect way to connect with attendees in a meaningful way. Sponsors at the Engage level have a unique opportunity to collect attendee emails prior to the event, based on opt-in responses to the final pre-conference email.
+        showStartingAt: true
+        summary: |
+          <p>Lead sponsorships are for companies that want to deliver their own message in the places it matters most. With stage time and prominent branding, these opportunities are the perfect way to show attendees what your brand is all about.</p>
+          <p>Sponsors at the Lead level have the opportunity to collect attendee emails prior to the event, based on opt-in responses to the final pre-conference email.</p>
 
         # put true or false for the following exepct badgeType, badgesDiscount, demoType, which all can be whatever you want
         badge: true
@@ -90,7 +101,8 @@
         optInEmails: true
 
         additionalCheckmarks:
-          # - item: Something else here
+           - item: One complimentary 15 min live stream demo slot
+           - item: Option to add-on a-la-carte deliverables
 
         opportunities:
           # - title: Workshop
@@ -106,10 +118,11 @@
         showInTable: true
         tableDescription: Maximize attendee interaction
         startingAt: $30,000
+        showStartingAt: true
         summary: |
-          Engage sponsorships are for companies that seek a high level of personal interaction with developers and technical leadership onsite. Featuring private demo stations and welcoming layouts, these opportunities are the perfect way to connect with attendees in a meaningful way.
-          <br />
-          Sponsors at the Engage level have a unique opportunity to collect attendee emails prior to the event, based on opt-in responses to the final pre-conference email.
+          <p>Engage sponsorships are for companies that seek a high level of personal interaction with developers and technical leadership onsite. Featuring private demo stations and welcoming layouts, these opportunities are the perfect way to connect with attendees in a meaningful way.</p>
+
+          <p>Sponsors at the Engage level have a unique opportunity to collect attendee emails prior to the event, based on opt-in responses to the final pre-conference email.</p>
 
         # put true or false for the following exepct badgeType, badgesDiscount, demoType, which all can be whatever you want
         badge: true
@@ -143,6 +156,7 @@
         showInTable: true
         tableDescription: Memorable interactive experiences
         startingAt: $20,000
+        showStartingAt: true
         summary: Delight sponsorships offer a balance of brand awareness and attendee engagement. We work closely with you to bring your brand values to life through memorable art installations and experiences, in a central location in the venue. Delight sponsorships have the highest opportunity for social media traction and brand recognition.
 
         # put true or false for the following exepct badgeType, badgesDiscount, demoType, which all can be whatever you want
@@ -177,6 +191,7 @@
         showInTable: true
         tableDescription: Your brand in everyone’s hands
         startingAt: $20,000
+        showStartingAt: true
         summary: Sustain sponsorships provide attendees with those thoughtful extras that ensure they have a great time. From snacks to giveaways, this is your change to hydrate, energize, and inspire them. Sustain sponsorships are the best way to put your brand directly into the hands of attendees. Please note these sponsorships do not include a dedicated space for your team to congregate or demo, but you have the option to add on live streamed demo slots.
 
         # put true or false for the following exepct badgeType, badgesDiscount, demoType, which all can be whatever you want
@@ -210,6 +225,7 @@
         showInTable: true
         tableDescription: Boost brand awareness
         startingAt: $20,000
+        showStartingAt: true
         summary: This opportunity is perfect for cost-conscious companies who are eager to get their brand in front of attendees, or who would like a taste of a GitHub event experience before committing to a larger package. Please note these sponsorships do not include an on-site space for your team to congregate or demo.
 
         # put true or false for the following exepct badgeType, badgesDiscount, demoType, which all can be whatever you want
@@ -235,24 +251,12 @@
           #   # if remainingQuantity is empty or at 0 this opportunity will be displayed as sold-out
           #   remainingQuantity:
 
-
-      ##################################################################
-      ##################################################################
-      - title: Add-On Deliverables
-        shortDescription: Power up your presence at Universe with these add-ons, available to sponsors of any level.
-        showInTable: false
-        startingAt: $1,500
-        summary:
-
-        additionalCheckmarks:
-          - item: Swag bag
-
       ########################  End Levels   ###########################
       ##################################################################
 
   ctaHeadline: Let’s bring your brand into the spotlight.
   ctaContent:
-  ctaLinkText: Become a sponsor
+  ctaLinkText: Contact Us
   ctaLinkUrl: /contact/
   ctaLinkText2:
   ctaLinkUrl2:

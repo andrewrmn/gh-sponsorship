@@ -60,7 +60,7 @@ permalink: /why-sponsor/
 
 <div class="container-full mt-9 mb-9">
     <div class="container container--thin text-center pr-3 pl-3 mb-6" data-animate-in="fade">
-        <h3 class="h1">{{ page.sectionThreeHeadline }}</h3>
+        <h3 class="h1  mb-2">{{ page.sectionThreeHeadline }}</h3>
         <p>{{ page.sectionThreeContent }}</p>
     </div>
     <div class="container clearfix mt-6 d-md-flex flex-items-stretch pr-3 pl-3">
@@ -87,6 +87,27 @@ permalink: /why-sponsor/
 
 </div>
 
+<aside class="bg-gray pt-9 pb-9">
+    <div class="container pl-3 pr-3">
+        <div class="text-center mb-6" data-animate-in="fade">
+            <h3 class="h1">GitHub Sponsors</h3>
+            <p class="p-lg">Proudly working with world-class companies</p>
+        </div>
+        <ul class="logo-list" data-animate-in="fade">
+            {% for sponsor in site.data.sponsors %}
+            <li>
+              <a href="{{ sponsor.url }}" target="_blank">
+                <img src="/assets/images/sponsors/{{ sponsor.logo }}" alt="{{ sponsor.name }}" />
+              </a>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+</aside>
+
+<section class="pt-9 pb-9 testimonials-wrap" id="testimonials">
+{% include testimonials.html %}
+</section>
 
 <aside class="blankslate blankslate--gradient pr-3 pl-3 pt-9 pb-9">
     <div data-animate-in="fade">

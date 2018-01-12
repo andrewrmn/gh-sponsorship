@@ -95,7 +95,11 @@
 .line-bg {
     position: relative;
     opacity: 0.3;
+}
 
+.testimonials-wrap .line-bg {
+    transform-origin: center;
+    transform: matrix(1, 0, 0, -1, 0, 0);
 }
 
 

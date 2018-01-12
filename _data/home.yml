@@ -12,8 +12,8 @@
   # Section one
   sectionOneHeadline: Events done differently
   sectionOneContent: |
-    <p>Forget the booths and flyers. From delightful giveaways to 30-foot balloon sculptures, GitHub events go beyond your typical tradeshow to make experiences with wow factor come alive. We work closely with you to create something that reflects your brand values while meeting your goals. There’s no limit to how creative we can get.</p>
-    <p>And with the most engaged software community in the world on our platform, you can always count on meaningful interactions with developers who care.</p>
+    <p>Forget the typical tradeshow booths and flyers. From interactive AR installations to 30-foot balloon sculptures, GitHub events make experiences with wow factor come alive for developers around the world. We work with sponsors, vendors, and artists to create an environment that inspires and delights developers. The bolder, the better.</p>
+    <p>With the most engaged software community in the world on our platform, you can count on meaningful interactions with developers who care.</p>
   sectionOneText: Learn more about our events
   sectionOneLink: /events/
   # Include path starting from the image folder i.e. marketing/GitHub-Image-Collage.jpg
@@ -54,16 +54,18 @@
       - image: marketing/home/home-block-4-3.jpg
         alt: Universe demo
 
+  howItWorksHeadline: How sponsorship works
+  howItWorksDesc: Let’s give your brand the presence it deserves.
 
   # Blocks
   block1Headline: Select an Event
   block1Content: We host software community events of all sizes, all over the world. Whether you want to reach developers in Canada or entrepreneurs in Australia, we’ve got you covered.
 
   block2Headline: Plan an Activation
-  block2Content: With your choice of demo lounges, art installations, food trucks, and more—you pick the event experience that fits your goals, and we’ll help you bring it to life.
+  block2Content: From including your logo in event emails to designing your dream demo lounge, we’ll work with you to choose the event experience that fits your goals and bring it to life.
 
   block3Headline: Build a Following
-  block3Content: The GitHub community attends our events to explore new tools. Sponsorship is the best way to make sure your product is part of their journey—and build connections you can count&nbsp;on.
+  block3Content: The GitHub community attends our events to explore new tools. Sponsorship is the best way to make sure your product is part of their journey—and build connections you can count on.
 
   testimonial1Author: Cassandra Davis
   testimonial1AuthorTitle: VP Consumer Engagement • Heroku
@@ -76,7 +78,7 @@
 
   ctaHeadline: Let’s bring your brand into the spotlight.
   ctaContent:
-  ctaLinkText: Become a sponsor
+  ctaLinkText: Contact Us
   ctaLinkUrl: /contact/
   ctaLinkText2:
   ctaLinkUrl2:

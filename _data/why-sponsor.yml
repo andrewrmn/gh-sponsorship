@@ -1,5 +1,5 @@
 - headline: Why sponsor a GitHub event
-  subHeadline: With a full focus on building the best developer experience possible, our events give you a new way to showcase your brand. We help you find the opportunity that’s right for you, and you make connections as it comes to life.
+  subHeadline: With a full focus on building the best developer experience possible, our events give you a new way to showcase your brand. We help you find the sponsorship opportunity that’s right for you, and you make connections as it comes to life.
   ctaText: Become a sponsor
   ctaLink: /contact/
   cta2Text: Learn more about our events
@@ -10,15 +10,26 @@
 
 
   # Section one
-  sectionOneHeadline: Why events are different
-  sectionOneContent: Universe highlights how software opens up possibilities that are otherwise unavailable. It brings people together to work on challenges that are bigger than any one person can tackle. Working together means creating ideas and finding solutions that are unique to that collection of people. Through software, we can achieve a sum that is greater than our parts.
+  sectionOneHeadline: More than a conference
+  sectionOneContent: |
+    <p>We stand by values like these to create experiences that redefine developer events—and keep our community coming back for more.</p><br />
+    <p class="h4">People > pitches</p>
+    <p>Our community wants to see products in action and have conversations about them, not get pitches at every turn.</p>
+
+    <p class="h4">Passion > consensus</p>
+    <p>Our events aim to amplify the ideas that challenge us from a wide range of people and industries, not just the most popular ones.</p>
+
+    <p class="h4">People > technology</p>
+    <p>Our events tell the stories of the individuals behind the tools, not just the tools themselves.</p>
+
   # Include path starting from the image folder i.e. marketing/GitHub-Image-Collage.jpg
   sectionOneImg: marketing/why-sponsor/GitHub-Universe-Octopus.jpg
   sectionOneImgDesc: GitHub Universe Octopus Display
 
   # Section Two
-  sectionTwoHeadline: Audience Demographics
-  sectionTwoContent: Universe highlights how software opens up possibilities that are otherwise unavailable. It brings people together to work on challenges that are bigger than any one person can tackle. Working together means creating ideas and finding solutions that are unique to that collection of people. Through software, we can achieve a sum that is greater than our parts.
+  sectionTwoHeadline: Who you’ll reach
+  sectionTwoContent: While we primarily design experiences for developers, people from every part of the software industry come to our events to find their next great idea. From DevOps specialists to CEOs, attendees care about collaboration, transparency, the tools that make their teams just a little more efficient—and they're waiting to hear from you.
+
   # Include path starting from the image folder i.e. marketing/GitHub-Image-Collage.jpg
   sectionTwoImg1: marketing/why-sponsor/why-block-1.jpg
   sectionTwoImgDesc1:
@@ -28,19 +39,27 @@
   sectionTwoImgDesc3:
 
   # Section Three
-  sectionThreeHeadline: Engagement Stats
-  sectionThreeContent: This is a text area for some information leading into the engagement results from past sponsorships that show data and success.
+  sectionThreeHeadline: How sponsorship works
+  sectionThreeContent: Let’s give your brand the presence it deserves.
 
   # Blocks
-  block1Headline: Audience > self
-  block1Content: Our events focus on how we can build the most authentic relationships with attendees, not just the best way to pitch them.
+  block1Headline: Select an Event
+  block1Content: We host software community events of all sizes, all over the world. Whether you want to reach developers in Canada or entrepreneurs in Australia, we’ve got you covered.
 
-  block2Headline: Diversity > consensus
-  block2Content: Our events aim to amplify ideas that challenge us from a wide range of people and industries, not just the most popular ones.
+  block2Headline: Plan an Activation
+  block2Content: From including your logo in event emails to designing your dream demo lounge, we’ll work with you to choose the event experience that fits your goals and bring it to life.
 
-  block3Headline: People > technology
-  block3Content: Our events tell the stories of the individuals behind the tools, not just the tools themselves.
+  block3Headline: Build a Following
+  block3Content: The GitHub community attends our events to explore new tools. Sponsorship is the best way to make sure your product is part of their journey—and build connections you can count on.
 
+
+  testimonial1Author: Cassandra Davis
+  testimonial1AuthorTitle: VP Consumer Engagement • Heroku
+  testimonial1: GitHub events can be described in one word&#58; AWESOME! We saw huge impressions for our brand awareness and walked away feeling like we got our money’s worth, and then some.
+
+  testimonial2Author: Cassandra Davis
+  testimonial2AuthorTitle: VP Consumer Engagement • Heroku
+  testimonial2: GitHub events can be described in one word&#58; AWESOME! We saw huge impressions for our brand awareness and walked away feeling like we got our money’s worth, and then some.
 
   ctaHeadline: A call to action section to conclude this page
   ctaContent: Use it to provide information to direct users to another page.
