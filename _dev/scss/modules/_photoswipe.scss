@@ -821,7 +821,7 @@ a.pswp__share--download {
 	border-radius: 50%;
     border: 0 solid #c6cbd1;
     box-shadow: 0 1px 3px 0 rgba(0,0,0,.1);
-	background: url('../images/svgs/arrow-right.svg') center / 7px 10px no-repeat !important;
+	background: white url('../images/svgs/arrow-right.svg') center / 7px 10px no-repeat !important;
 	z-index: 4;
 	right: 12px;
 
@@ -834,5 +834,5 @@ a.pswp__share--download {
 .pswp__button--arrow--left {
 	right: auto;
 	left: 12px;
-	background: url('../images/svgs/arrow-left.svg') center / 7px 10px no-repeat !important;
+	background: white url('../images/svgs/arrow-left.svg') center / 7px 10px no-repeat !important;
 }

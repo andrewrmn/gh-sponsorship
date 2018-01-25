@@ -1,6 +1,6 @@
 - headline: Why sponsor a GitHub event
   subHeadline: With a full focus on building the best developer experience possible, our events give you a new way to showcase your brand. We help you find the sponsorship opportunity that’s right for you, and you make connections as it comes to life.
-  ctaText: Become a sponsor
+  ctaText: Contact Us
   ctaLink: /contact/
   cta2Text: Learn more about our events
   cta2Link: /events/
@@ -53,17 +53,21 @@
   block3Content: The GitHub community attends our events to explore new tools. Sponsorship is the best way to make sure your product is part of their journey—and build connections you can count on.
 
 
-  testimonial1Author: Cassandra Davis
-  testimonial1AuthorTitle: VP Consumer Engagement • Heroku
-  testimonial1: GitHub events can be described in one word&#58; AWESOME! We saw huge impressions for our brand awareness and walked away feeling like we got our money’s worth, and then some.
+  testimonial1Author: Andrew Homeyer
+  testimonial1AuthorTitle: Founder, Waffle.io
+  testimonial1: Most developer events are very transactional, but GitHub events aren’t at all. The aesthetic is intentional, the conversations are meaningful, and all of our customers are happy to be there.
+  testimonial1Image: /sponsors/waffle.png
+  companyImage: true
 
-  testimonial2Author: Cassandra Davis
-  testimonial2AuthorTitle: VP Consumer Engagement • Heroku
-  testimonial2: GitHub events can be described in one word&#58; AWESOME! We saw huge impressions for our brand awareness and walked away feeling like we got our money’s worth, and then some.
+  testimonial2Author: Justine Arreche
+  testimonial2AuthorTitle: Creative Director, Travis CI
+  testimonial2: GitHub events are more like magical productions than conferences – like Disneyland except with an octocat instead of Mickey. The GitHub Team considers every detail and makes it easy for sponsors to plug into it all. We couldn’t have been happier with the experience.
+  testimonial2Image: /sponsors/TravisCI.svg
+  companyImage: true
 
-  ctaHeadline: A call to action section to conclude this page
-  ctaContent: Use it to provide information to direct users to another page.
-  ctaLinkText: View GitHub Events
-  ctaLinkUrl: /events/
-  ctaLinkText2: Contact Us
-  ctaLinkUrl2: /contact/
+  ctaHeadline: Let’s bring your brand into the spotlight.
+  ctaContent:
+  ctaLinkText: Contact Us
+  ctaLinkUrl: /contact/
+  ctaLinkText2:
+  ctaLinkUrl2:

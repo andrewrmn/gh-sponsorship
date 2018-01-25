@@ -1,7 +1,7 @@
 - headline: Sponsor a GitHub Event
   subHeadline: GitHub events bring together thousands of leading software developers and companies from around the world to solve today’s biggest challenges. As a sponsor, you select the sponsorship level that fits your goals, and we set you up with everything you need to get your message in front of the right people at the right time.
-  ctaText: Become a Sponsor
-  ctaLink: /contact/
+  ctaText: Why Sponsor
+  ctaLink: /why-sponsor/
   cta2Text:
   cta2Link:
   # Include path starting from the image folder i.e. marketing/GitHub-Image-Collage.jpg
@@ -12,7 +12,7 @@
   # Section one
   sectionOneHeadline: Events done differently
   sectionOneContent: |
-    <p>Forget the typical tradeshow booths and flyers. From interactive AR installations to 30-foot balloon sculptures, GitHub events make experiences with wow factor come alive for developers around the world. We work with sponsors, vendors, and artists to create an environment that inspires and delights developers. The bolder, the better.</p>
+    <p>Forget the typical tradeshow booths and flyers. From interactive AR installations to 30-foot balloon sculptures, GitHub events make experiences with wow factor come alive for developers around the world. We work with sponsors, vendors, and artists to create an environment that inspires and delights developers. The bolder, the&nbsp;better.</p>
     <p>With the most engaged software community in the world on our platform, you can count on meaningful interactions with developers who care.</p>
   sectionOneText: Learn more about our events
   sectionOneLink: /events/
@@ -67,13 +67,19 @@
   block3Headline: Build a Following
   block3Content: The GitHub community attends our events to explore new tools. Sponsorship is the best way to make sure your product is part of their journey—and build connections you can count on.
 
-  testimonial1Author: Cassandra Davis
-  testimonial1AuthorTitle: VP Consumer Engagement • Heroku
-  testimonial1: GitHub events can be described in one word&#58; AWESOME! We saw huge impressions for our brand awareness and walked away feeling like we got our money’s worth, and then some.
 
-  testimonial2Author: Cassandra Davis
-  testimonial2AuthorTitle: VP Consumer Engagement • Heroku
-  testimonial2: GitHub events can be described in one word&#58; AWESOME! We saw huge impressions for our brand awareness and walked away feeling like we got our money’s worth, and then some.
+
+  testimonial1Author: Aaron Upright
+  testimonial1AuthorTitle: Co-founder, ZenHub
+  testimonial1: We like getting leads, but we care a lot more about having quality conversations. The developers we meet as sponsors are genuinely interested in a two-way conversation about our products, so we end up getting so much more out of GitHub events than your typical conferences.
+  testimonial1Image: /sponsors/zenhub.png
+  companyImage: true
+
+  testimonial2Author: Chad Williams
+  testimonial2AuthorTitle: Cloud Marketing Manager, IBM
+  testimonial2: GitHub worked with us to build the perfect experience to showcase IBM and our products at Universe. We had all the services we needed to attract hundreds of people to our lounge, and every person who stopped by was the type of software professional we wanted to meet. You don’t get that at any other event.
+  testimonial2Image: /sponsors/ibm.png
+  companyImage: true
 
 
   ctaHeadline: Let’s bring your brand into the spotlight.

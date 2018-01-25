@@ -32,7 +32,7 @@
 
 .card--testimonial {
     width: 100%;
-    max-width: 538px;
+    max-width: 618px;
     display: flex;
 
     figure {
@@ -43,12 +43,21 @@
         min-width: 120px;
         border-radius: 50%;
         overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
 
-        img {
-            object-fit: cover;
-            width: 100%;
-            height: 100%;
+        &.author-thumbnail {
+
+
+            img {
+                object-fit: cover;
+                width: 100%;
+                height: 100%;
+            }
         }
+
+
     }
 
     p {

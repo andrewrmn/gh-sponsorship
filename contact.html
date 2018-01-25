@@ -26,59 +26,66 @@ permalink: /contact/
     </header>
 
     <div class="container pt-8 pb-8 pl-3 pr-3">
-        <form action="" data-animate-in="up" >
+        <form action="https://s88570519.t.eloqua.com/e/f2" data-animate-in="up" >
             <h3 class="h2">Contact Events Team</h3>
 
             <div>
+            <input type="hidden" name="elqFormName" value="events-sponsorship-form">
+            <input type="hidden" name="elqSiteID" value="88570519">
+            <input type="hidden" name="elqCustomerGUID" value="">
+            <input type="hidden" name="elqCookieWrite" value="0">
+            <input type="hidden" name="USOURCE" value="">
+            <input type="hidden" name="UMEDIUM" value="">
+            <input type="hidden" name="UCAMPAIGN" value="">
                 <div class="form-group">
                     <label for="name">Name</label>
-                    <input class="form-control input-block" placeholder="First and Last Name" type="text" id="name" required>
+                    <input class="form-control input-block" placeholder="First and Last Name" type="text" id="name" name="fullName1" required>
                     <p class="error" id="form-error-text">This example input has an error.</p>
                 </div>
 
                 <div class="form-group">
                     <label for="email">Email address</label>
-                    <input class="form-control input-block" placeholder="yourname@example.com" type="email" id="email">
+                    <input class="form-control input-block" placeholder="yourname@example.com" type="email" id="email" name="emailAddress">
                 </div>
 
                 <div class="form-group">
                     <label for="company">Company</label>
-                    <input class="form-control input-block" placeholder="e.g. Gotham Enterprises" type="text" id="company">
+                    <input class="form-control input-block" placeholder="e.g. Gotham Enterprises" type="text" id="company" name="company">
                 </div>
 
                 <div class="form-group">
                     <label>Event(s) I’m interested in:</label>
                     <div class="pb-1">
                         <label class="label-checkbox">
-                            <input type="checkbox" id="GitMerge" name="GitMerge" checked> GitMerge
+                            <input type="checkbox" id="GitMerge" value="GitMerge" name="event_interests" checked> GitMerge
                         </label>
                     </div>
                     <div class="pb-1">
                         <label class="label-checkbox">
-                            <input type="checkbox" id="ElectronConf" name="ElectronConf"> ElectronConf
+                            <input type="checkbox" id="ElectronConf" value="ElectronConf" name="event_interests"> ElectronConf
                         </label>
                     </div>
                     <div class="pb-1">
                         <label class="label-checkbox">
-                            <input type="checkbox" id="Satellite" name="Satellite"> Satellite
+                            <input type="checkbox" id="Satellite" value="Satellite" name="event_interests"> Satellite
                         </label>
                     </div>
                     <div class="pb-1">
                         <label class="label-checkbox">
-                            <input type="checkbox" id="Universe" name="Universe"> Universe
+                            <input type="checkbox" id="Universe" value="Universe" name="event_interests"> Universe
                         </label>
                     </div>
                     <div class="pb-1">
                         <div>
                             <label class="label-checkbox">
-                                <input type="checkbox" id="Constellation" name="Constellation"> Constellation*
+                                <input type="checkbox" id="Constellation" value="Constellation" name="event_interests"> Constellation*
                             </label>
 
                         </div>
                         <div class="pt-1 pb-1">
                             <p class="note text-italic mb-2">*Constellation is a localized multi-event series taking place in several cities.</p>
                             <label class="sr-only" for="constellation_cities">Constellation cities interested in</label>
-                            <input class="form-control input-sm input-block" placeholder="Enter city or cities you’re interested in" type="text" id="constellation_cities">
+                            <input class="form-control input-sm input-block" placeholder="Enter city or cities you’re interested in" type="text" id="constellation_cities" name="event_cities">
                         </div>
                     </div>
                 </div>
@@ -86,7 +93,7 @@ permalink: /contact/
                 <dl class="form-group">
                     <dt><label for="tell-us-more">Tell us more about how we can help get you involved</label></dt>
                     <dd>
-                        <textarea class="form-control" id="tell-us-more"></textarea>
+                        <textarea class="form-control" id="tell-us-more" name="comments"></textarea>
                     </dd>
                 </dl>
 
@@ -94,11 +101,11 @@ permalink: /contact/
                     <label>Have you sponsored a GitHub event in the past?</label>
                     <div>
                         <label class="label-checkbox mr-3">
-                            <input type="radio" id="yes" name="previous-sponsor" checked> Yes
+                            <input type="radio" id="yes" value="Yes" name="past_sponsorship" checked> Yes
                         </label>
 
                         <label class="label-checkbox">
-                            <input type="radio" id="no" name="previous-sponsor"> No
+                            <input type="radio" id="no" value="No" name="past_sponsorship"> No
                         </label>
                     </div>
                 </div>
@@ -108,4 +115,28 @@ permalink: /contact/
                 </div>
             </div>
         </form>
+
+        <script type='text/javascript'>
+            var timerId = null, timeout = 5;
+        </script>
+        <script type='text/javascript'><!--//
+            function WaitUntilCustomerGUIDIsRetrieved() {
+                if (!!(timerId)) {
+                    if (timeout == 0) {
+                        return;
+                    }
+                    if (typeof this.GetElqCustomerGUID === 'function') {
+                        document.forms["events-sponsorship-form"].elements["elqCustomerGUID"].value = GetElqCustomerGUID();
+                        return;
+                    }
+                    timeout -= 1;
+                }
+                timerId = setTimeout("WaitUntilCustomerGUIDIsRetrieved()", 500);
+                return;
+            }
+            window.onload = WaitUntilCustomerGUIDIsRetrieved;
+            _elqQ.push(['elqGetCustomerGUID']);
+
+        </script>
+
     </div>

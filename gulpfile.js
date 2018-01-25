@@ -53,20 +53,6 @@ gulp.task('styles', function() {
 	.pipe(gulp.dest(buildPath + '/css/'))
 });
 
-// Scripts Gulp task, run by calling 'gulp scripts' in CLI
-// gulp.task('scripts', function() {
-// 	var scriptsToConcat = [
-// 		devPath + '/js/global.js'
-// 	];
-// 	gulp.src(scriptsToConcat)
-// 		.pipe(concat('production.js'))
-// 		//.pipe(gulp.dest(buildPath + '/js/'))
-// 		.pipe(uglify())
-// 		.pipe(rename({
-// 			suffix: ".min"
-// 		}))
-// 		.pipe(gulp.dest(buildPath + '/js/'))
-// });
 
 gulp.task('scripts', function() {
 	return gulp.src([devPath + '/js/main.js'])

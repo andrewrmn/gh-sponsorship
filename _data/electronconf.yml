@@ -2,6 +2,7 @@
   date: April 23 - 24
   location: New York
   capacity: 500 Attendees
+  website: http://electronconf.com
   shortDescription: ElectronConf is a brand new conference completely dedicated to Electron, the easiest framework for building cross-platform desktop apps.
 
   # Include path starting from the image folder i.e. marketing/GitHub-Image-Collage.jpg
@@ -27,6 +28,7 @@
 
 
   # Demographics
+  hideDemographics: true
   demographicsHeadline: Audience Demographics
   demographicsContent: This is a text area about the audience demographics to highlight the focus and the diversity in a few words or more.
 
@@ -130,7 +132,7 @@
         opportunitiesAlwaysShow: true
         opportunities:
           - title: Demo Lounge
-            description: Uplevel your presence with a welcoming lounge and personal demo station. Customized with your branding, these spaces are a great way to connect with attendees throughout the event.
+            description: Level up your presence on the event floor with a welcoming lounge and personal demo station. With comfortable furniture and plenty of branding opportunities—these spaces are a the best way to connect with attendees all day.
             checkmarks:
               - item: Custom branding and signage
               - item: Private Demo station with monitor
@@ -139,8 +141,8 @@
             # if remainingQuantity is empty or at 0 this opportunity will be displayed as sold-out
             remainingQuantity: 2
 
-          - title: Post-conference cocktail hour
-            description:
+          - title: Cocktail Hour
+            description: Treat attendees to a few hours of mingling with a branded cocktail hour after the conference wraps. Sponsorship includes a special thanks from the stage and the opportunity to give a welcome speech at the gathering.
             checkmarks:
               - item: Custom branding, signage and swag
               - item: Additional mention on website and special thanks from stage

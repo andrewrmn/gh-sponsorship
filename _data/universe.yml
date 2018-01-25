@@ -2,6 +2,7 @@
   date: Oct 16 - 17
   location: San Francisco, CA
   capacity: 1800 Attendees
+  website:
   shortDescription: GitHub Universe is a two-day community and product conference dedicated to the people who push technology forward.
 
   # Include path starting from the image folder i.e. marketing/GitHub-Image-Collage.jpg
@@ -138,9 +139,21 @@
           - item: Option to add-on a-la-carte deliverables
 
         opportunities:
-          # - title: Notebooks
+          # - title: Master Track
           #   description: The GitHub Universe after party celebrates people who shape the future of software, featuring live musical entertainment for a great cause. In addition to conference benefits included with Engage sponsorships, this opportunity offers concert venue branding, a well-placed lounge, and special thanks in the pre-event attendee email.
-          #   price: $50,000
+          #   price: $300,000
+          #   # if remainingQuantity is empty or at 0 this opportunity will be displayed as sold-out
+          #   remainingQuantity: 2
+
+          - title: Workshop
+            description: Showcase your product while strengthening the skills of GitHub developers by hosting a custom workshop for GitHub Universe attendees. With live streaming plus post-event content promotion, your sponsored workshop gives you the highest level of exposure at Universe.
+            price: $50,000
+            # if remainingQuantity is empty or at 0 this opportunity will be displayed as sold-out
+            remainingQuantity: 8
+
+          # - title: TV/Broadcast
+          #   description:
+          #   price: $100,000
           #   # if remainingQuantity is empty or at 0 this opportunity will be displayed as sold-out
           #   remainingQuantity: 1
 
@@ -174,12 +187,29 @@
           - item: Option to add-on a-la-carte deliverables
 
         opportunities:
-          # - title: Notebooks
-          #   description: The GitHub Universe after party celebrates people who shape the future of software, featuring live musical entertainment for a great cause. In addition to conference benefits included with Engage sponsorships, this opportunity offers concert venue branding, a well-placed lounge, and special thanks in the pre-event attendee email.
-          #   price: $35,000
+          # - title: Marketplace
+          #   description:
+          #   price: $15,000
           #   # if remainingQuantity is empty or at 0 this opportunity will be displayed as sold-out
-          #   remainingQuantity: 1
+          #   remainingQuantity: 12
 
+          - title: Lounge
+            description: Level up your presence on the event floor with a welcoming lounge and personal demo station. With chargers, comfortable furniture, and plenty of branding opportunities—these spaces are a the best way to connect with attendees all day.
+            price: $50,000
+            # if remainingQuantity is empty or at 0 this opportunity will be displayed as sold-out
+            remainingQuantity: 3
+
+          - title: Afterparty
+            description: Show attendees what your brand is all about at the Universe After Party. An After Party presence gives you experiential branding opportunities and a dedicated VIP area to start conversations in a more casual setting.
+            price: $60,000
+            # if remainingQuantity is empty or at 0 this opportunity will be displayed as sold-out
+            remainingQuantity: 1
+
+          # - title: Aux Events
+          #   description:
+          #   price: $25,000
+          #   # if remainingQuantity is empty or at 0 this opportunity will be displayed as sold-out
+          #   remainingQuantity: 3
 
       ##################################################################
       ##################################################################
@@ -209,11 +239,23 @@
           - item: Option to add-on a-la-carte deliverables
 
         opportunities:
-          # - title: Notebooks
-          #   description: The GitHub Universe after party celebrates people who shape the future of software, featuring live musical entertainment for a great cause. In addition to conference benefits included with Engage sponsorships, this opportunity offers concert venue branding, a well-placed lounge, and special thanks in the pre-event attendee email.
-          #   price: $35,000
-          #   # if remainingQuantity is empty or at 0 this opportunity will be displayed as sold-out
-          #   remainingQuantity: 1
+          - title: Interactive Hangout
+            description: With this part mini-lounge, part art installation, interactive hangouts give you the best of both worlds. Hangout spaces are approachable and designed to make your branding shine in a more relaxed, communal environment, and custom branding is elevated in a memorable way.
+            price: $40,000
+            # if remainingQuantity is empty or at 0 this opportunity will be displayed as sold-out
+            remainingQuantity: 3
+
+          - title: Art Installation
+            description: Art installations are a unique way to bring your brand to life. From dynamic murals to 30-foot balloon sculptures, we’ve helped teams create all kinds of memorable experiences that inspire conversation about your brand.
+            price: $28,000
+            # if remainingQuantity is empty or at 0 this opportunity will be displayed as sold-out
+            remainingQuantity: 3
+
+          - title: Game Park
+            description: From giant jenga to bocce ball, games provide a much needed mental break for attendees during a long day of conference activities. Sponsor one of the games in the outdoor game park and make brand awareness fun while connecting with attendees throughout the day.
+            price: $15,000
+            # if remainingQuantity is empty or at 0 this opportunity will be displayed as sold-out
+            remainingQuantity: 5
 
 
       ##################################################################
@@ -243,11 +285,59 @@
           - item: Option to add-on a-la-carte deliverables
 
         opportunities:
-          # - title: Notebooks
-          #   description: The GitHub Universe after party celebrates people who shape the future of software, featuring live musical entertainment for a great cause. In addition to conference benefits included with Engage sponsorships, this opportunity offers concert venue branding, a well-placed lounge, and special thanks in the pre-event attendee email.
-          #   price: $35,000
-          #   # if remainingQuantity is empty or at 0 this opportunity will be displayed as sold-out
-          #   remainingQuantity: 1
+          - title: Wellness Room
+            description: Promote health and relaxation by sponsoring a wellness room&#58; a quiet space where attendees can go to recharge throughout the day.
+            price: $15,000
+            # if remainingQuantity is empty or at 0 this opportunity will be displayed as sold-out
+            remainingQuantity: 1
+
+          - title: Notebooks
+            description: Put your brand into the hands of every attendee with a co-branded Universe notebook. Customize 3 inside pages with content of your choice.
+            price: $25,000
+            # if remainingQuantity is empty or at 0 this opportunity will be displayed as sold-out
+            remainingQuantity: 1
+
+          - title: Specialty F&B
+            description: Attendees can't resist a treat, especially during a busy conference day. Ice cream, boba, and fresh-pressed juice are just a few ways you can delight attendees—and branded packaging and prominent signage keep your brand top-of-mind throughout the day.
+            price: $25,000
+            # if remainingQuantity is empty or at 0 this opportunity will be displayed as sold-out
+            remainingQuantity: 3
+
+          - title: Wifi
+            description: Be the exclusive sponsor of the wifi network that allows attendees to stay connected. Sponsorship includes a slide featuring your logo on all stages and a custom login password of your choice.
+            price: $18,000
+            # if remainingQuantity is empty or at 0 this opportunity will be displayed as sold-out
+            remainingQuantity: 1
+
+          - title: Coffee
+            description: Help attendees stay energized with a Ritual Coffee Cart sponsorship featuring gourmet coffee drinks served in cups with your branding.
+            price: $30,000
+            # if remainingQuantity is empty or at 0 this opportunity will be displayed as sold-out
+            remainingQuantity: 1
+
+          - title: PM Snack
+            description: Get your brand out there with an energy-boosting afternoon snack. From mustard-dipped pretzels to cream puffs, we create branded packaging for your treats of choice and distribute them to hungry attendees when they need them most.
+            price: $12,000
+            # if remainingQuantity is empty or at 0 this opportunity will be displayed as sold-out
+            remainingQuantity: 2
+
+          - title: Hydration Station
+            description: Keep attendees hydrated and happy with branded beverage stations around the conference. Consider boosting awareness with a branded water bottle in attendees tote bags, available as an add-on.
+            price: $10,000
+            # if remainingQuantity is empty or at 0 this opportunity will be displayed as sold-out
+            remainingQuantity: 1
+
+          - title: Pedicab
+            description: Sponsor a fleet of eco-friendlly pedicabs to assist attendees in getting around town. Your brand will have dedicated signage on each pedicab and a place on our event website.
+            price: $15,000
+            # if remainingQuantity is empty or at 0 this opportunity will be displayed as sold-out
+            remainingQuantity: 1
+
+          - title: Storage Lockers
+            description: Give attendees peace of mind by providing a secure place to lock up important belongings at Universe with your branding.
+            price: $20,000
+            # if remainingQuantity is empty or at 0 this opportunity will be displayed as sold-out
+            remainingQuantity: 1
 
 
       ##################################################################
@@ -277,11 +367,11 @@
           # - item: Something else here
 
         opportunities:
-          # - title: Notebooks
-          #   description: The GitHub Universe after party celebrates people who shape the future of software, featuring live musical entertainment for a great cause. In addition to conference benefits included with Engage sponsorships, this opportunity offers concert venue branding, a well-placed lounge, and special thanks in the pre-event attendee email.
-          #   price: $35,000
-          #   # if remainingQuantity is empty or at 0 this opportunity will be displayed as sold-out
-          #   remainingQuantity: 1
+          - title: Community
+            description: If you’re interested in having a presence at Universe but aren't ready to commit to a larger package, this is a great way to put your logo in front of almost two thousand software community attendees.
+            price: $6,000
+            # if remainingQuantity is empty or at 0 this opportunity will be displayed as sold-out
+            remainingQuantity: 12
 
 
       ##################################################################
@@ -292,6 +382,49 @@
         startingAt: $1,500
         showStartingAt: true
         summary:
+
+        opportunities:
+          - title: Bag Swag
+            description: Put your logo into attendee hands with a custom swag item in everyone's tote bags. Choose from a selection of options and leave the rest to us.
+            price: $5,000
+            # if remainingQuantity is empty or at 0 this opportunity will be displayed as sold-out
+            remainingQuantity: 12
+
+          - title: Demo Livestream (15 min)
+            description: With over 250,000 views on the Universe live stream in 2017, a demo live stream is a great way to reach thousands of developers beyond Universe attendees. Don't miss your chance to show off your product and widen your reach.
+            price: $6,000
+            # if remainingQuantity is empty or at 0 this opportunity will be displayed as sold-out
+            remainingQuantity: 15
+
+          - title: Vending Machines
+            description: Load up our vending machines with prizes, raffle tickets, vouchers, and more to increase brand awareness and make attendees smile.
+            price: $1,500
+            # if remainingQuantity is empty or at 0 this opportunity will be displayed as sold-out
+            remainingQuantity: 15
+
+          - title: Charging Cube
+            description: Expand your presence at Universe by helping attendees charge up and stay connected. Sponsorship includes your logo on 2 charging cubes placed in high traffic areas.
+            price: $1,500
+            # if remainingQuantity is empty or at 0 this opportunity will be displayed as sold-out
+            remainingQuantity: 12
+
+          - title: Private Meeting Pods
+            description: With all-day speakers and limited space, meetings can be difficult to plan when you're at a conference. Reserve a private meeting pod to guarantee a private space for important conversations at Universe.
+            price: $6,000
+            # if remainingQuantity is empty or at 0 this opportunity will be displayed as sold-out
+            remainingQuantity: 10
+
+          - title: Speaker Gift Bags
+            description: Get in front of some of the most influential people in software with a branded item in our speaker gift bags.
+            price: $4,000
+            # if remainingQuantity is empty or at 0 this opportunity will be displayed as sold-out
+            remainingQuantity: 5
+
+          - title: Breakfast mixer
+            description: Help attendees kick off the day right by hosting breakfast one morning of the conference. Branded packaging, signage, and an outdoor demo area will keep your brand top-of-mind well after breakfast is over.
+            price: $10,000
+            # if remainingQuantity is empty or at 0 this opportunity will be displayed as sold-out
+            remainingQuantity: 2
 
         # additionalCheckmarks:
         #   - item: Swag bag

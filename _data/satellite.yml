@@ -2,6 +2,7 @@
   date: June 12 - 13
   location: Tokyo
   capacity: 800 attendees
+  website: https://githubuniverse.com/satellite/
   shortDescription: GitHub Satellite is a two-day regional extension of GitHub Universe, our flagship conference, dedicated to the future of code.
 
   # Include path starting from the image folder i.e. marketing/GitHub-Image-Collage.jpg
@@ -105,11 +106,11 @@
            - item: Option to add-on a-la-carte deliverables
 
         opportunities:
-          # - title: Workshop
-          #   description:
-          #   price: $25,000
-          #   # if remainingQuantity is empty or at 0 this opportunity will be displayed as sold-out
-          #   remainingQuantity: 2
+          - title: Workshop
+            description: Showcase your product while strengthening the skills of GitHub developers by hosting a custom workshop for GitHub Satellite attendees. With live streaming plus post-event content promotion, your sponsored workshop gives you the highest level of exposure at Satellite.
+            price: $25,000
+            # if remainingQuantity is empty or at 0 this opportunity will be displayed as sold-out
+            remainingQuantity: 2
 
       ##################################################################
       ##################################################################
@@ -143,8 +144,14 @@
 
         opportunities:
           - title: Demo Lounge
-            description: One of the best ways to engage with attendees on a deeper level, this is the only sponsorship that comes with a personal demo station. Designed to be inviting, these spaces will generally be full of attendees hanging out, getting work done or looking to have conversations with your team.
+            description: Level up your presence on the event floor with a welcoming lounge and personal demo station. With chargers, comfortable furniture, and plenty of branding opportunities—these spaces are a the best way to connect with attendees all day.
             price: $22,000
+            # if remainingQuantity is empty or at 0 this opportunity will be displayed as sold-out
+            remainingQuantity: 2
+
+          - title: Cocktail Party
+            description: Show attendees what your brand is all about at the Satellite Cocktail Party on Day 1. An After Party presence gives you experiential branding opportunities and a dedicated VIP area to start conversations in a more casual setting.
+            price: $10,000
             # if remainingQuantity is empty or at 0 this opportunity will be displayed as sold-out
             remainingQuantity: 2
 
@@ -178,7 +185,7 @@
 
         opportunities:
           - title: Art Installation
-            description: Art installations are a unique way to bring your brand to life. From dynamic murals to 30-foot balloon sculptures, we’ve helped teams create all sorts of memorable experiences that inspire conversation about your brand.
+            description: Art installations are a unique way to bring your brand to life. From dynamic murals to 30-foot balloon sculptures, we’ve helped teams create all kinds of memorable experiences that inspire conversation about your brand.
             price: $15,000
             # if remainingQuantity is empty or at 0 this opportunity will be displayed as sold-out
             remainingQuantity: 2
@@ -212,8 +219,8 @@
 
         opportunities:
           - title: Specialty F&B
-            description: Treat attendees to a delicious and energy-boosting treat. From mustard-dipped pretzels to gourmet coffee, we create custom packaging for your item of choice and distribute to hungry attendees on both days of the conference.
-            price: $12,000
+            description: Treat attendees to a delicious, energy-boosting treat. From mustard-dipped pretzels to gourmet coffee, we create custom packaging for your item of choice and distribute to keep attendees fueled up both days of the conference.
+            price: $15,000
             # if remainingQuantity is empty or at 0 this opportunity will be displayed as sold-out
             remainingQuantity: 2
 
@@ -245,11 +252,11 @@
           # - item: Something else here
 
         opportunities:
-          # - title: Notebooks
-          #   description: The GitHub Universe after party celebrates people who shape the future of software, featuring live musical entertainment for a great cause. In addition to conference benefits included with Engage sponsorships, this opportunity offers concert venue branding, a well-placed lounge, and special thanks in the pre-event attendee email.
-          #   price: $35,000
-          #   # if remainingQuantity is empty or at 0 this opportunity will be displayed as sold-out
-          #   remainingQuantity:
+          - title: Community
+            description: If you’re interested in having a presence at Universe but aren't ready to commit to a larger package, this is a great way to put your logo in front of almost a thousand software community attendees.
+            price: $4,000
+            # if remainingQuantity is empty or at 0 this opportunity will be displayed as sold-out
+            remainingQuantity: 5
 
       ########################  End Levels   ###########################
       ##################################################################
